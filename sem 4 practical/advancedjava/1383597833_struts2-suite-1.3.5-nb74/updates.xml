@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE module_updates PUBLIC "-//NetBeans//DTD Autoupdate Catalog 2.6//EN" "http://www.netbeans.org/dtds/autoupdate-catalog-2_6.dtd">
+<module_updates timestamp="37/36/20/04/11/2013">
+
+
+
+<module_group name="Java Web and EE">
+
+<module codenamebase="org.netbeans.modules.web.frameworks.struts2" distribution="org-netbeans-modules-web-frameworks-struts2.nbm" downloadsize="71624" homepage="http://nbstruts2support.dev.java.net" license="E42ACA9D" moduleauthor="Petr Pisl, Rohan Ranade, Sujit Nair, repack by Aleh Maksimovich" needsrestart="false" releasedate="2013/11/04">
+    <manifest AutoUpdate-Show-In-Client="true" OpenIDE-Module="org.netbeans.modules.web.frameworks.struts2/1" OpenIDE-Module-Display-Category="Java Web and EE" OpenIDE-Module-Implementation-Version="131104" OpenIDE-Module-Java-Dependencies="Java &gt; 1.6" OpenIDE-Module-Module-Dependencies="org.netbeans.api.java.classpath/1 &gt; 1.19.1, org.netbeans.api.web.webmodule &gt; 1.13.1, org.netbeans.libs.javacapi &gt; 0.8.1.1, org.netbeans.modules.editor/3 &gt; 1.42.2.3.9.2, org.netbeans.modules.editor.completion/1 &gt; 1.14.2.1, org.netbeans.modules.editor.deprecated.pre65formatting/0 &gt; 1.4.1.1.5.13.10, org.netbeans.modules.editor.lib/3 &gt; 3.8.1.13.9, org.netbeans.modules.editor.lib2/1 &gt; 1.11.2.2, org.netbeans.modules.editor.mimelookup/1 &gt; 1.22.1, org.netbeans.modules.j2ee.dd/1 &gt; 1.13.1.2, org.netbeans.modules.java.project/1 &gt; 1.32.1, org.netbeans.modules.java.source &gt; 0.44.2.7.8.1, org.netbeans.modules.java.sourceui/1 &gt; 1.7.1.1.7.1, org.netbeans.modules.lexer/2 &gt; 1.39.1.1, org.netbeans.modules.parsing.api/1 &gt; 1.43.1.6, org.netbeans.modules.project.libraries/1 &gt; 1.20.1, org.netbeans.modules.projectapi/1 &gt; 1.24.2, org.netbeans.modules.projectuiapi/1 &gt; 1.35.1.6, org.netbeans.modules.xml.catalog/2 &gt; 1.15.1.4, org.netbeans.modules.xml.lexer &gt; 1.13.1, org.netbeans.modules.xml.retriever/1 &gt; 1.4.1, org.netbeans.modules.xml.text/2 &gt; 1.17.1.5, org.netbeans.modules.xml.xam/1 &gt; 1.5.2.1, org.netbeans.modules.xml.xdm/1 &gt; 1.15.1.1, org.openide.awt &gt; 7.31.1, org.openide.dialogs &gt; 7.10.1, org.openide.filesystems &gt; 7.21.1.1.1, org.openide.loaders &gt; 7.5.2, org.openide.nodes &gt; 7.9.2.1, org.openide.text &gt; 6.22.1, org.openide.util &gt; 7.22.1.1, org.openide.util.lookup &gt; 8.8.1, org.openide.windows &gt; 6.26.1" OpenIDE-Module-Name="Struts2 Support" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="Support for Struts2" OpenIDE-Module-Specification-Version="1.3.5"/>
+    
+</module>
+
+<module codenamebase="org.netbeans.modules.framework.xwork" distribution="org-netbeans-modules-framework-xwork.nbm" downloadsize="33202" homepage="http://sourceforge.net/p/struts2nbplugin/home/Home/" license="E42ACA9D" moduleauthor="Aleh Maksimovich" needsrestart="true" releasedate="2013/11/04">
+    <manifest AutoUpdate-Show-In-Client="true" OpenIDE-Module="org.netbeans.modules.framework.xwork/0" OpenIDE-Module-Display-Category="Java Web and EE" OpenIDE-Module-Implementation-Version="131104" OpenIDE-Module-Java-Dependencies="Java &gt; 1.6" OpenIDE-Module-Long-Description="Experimental support for XWork validation features. Please check for plug-in details at https://sourceforge.net/p/struts2nbplugin/wiki/XWork%20Support/." OpenIDE-Module-Module-Dependencies="org.netbeans.api.java.classpath/1 &gt; 1.29.1, org.netbeans.libs.javacapi &gt; 7.6.1.3, org.netbeans.modules.editor/3 &gt; 1.57.1.5.13.10, org.netbeans.modules.editor.completion/1 &gt; 1.26.1.1, org.netbeans.modules.editor.lib/3 &gt; 3.9.1.13.10, org.netbeans.modules.editor.lib2/1 &gt; 1.43.1.10, org.netbeans.modules.editor.mimelookup/1 &gt; 1.22.1, org.netbeans.modules.java.lexer/1 &gt; 1.14.1, org.netbeans.modules.java.source &gt; 0.80.1.17.15.6, org.netbeans.modules.java.sourceui/1 &gt; 1.23.1.1.17, org.netbeans.modules.lexer/2 &gt; 1.39.1.1, org.netbeans.modules.parsing.api/1 &gt; 1.43.1.6, org.netbeans.modules.xml.lexer &gt; 1.13.1, org.openide.awt &gt; 7.31.1, org.openide.filesystems &gt; 7.47.1, org.openide.loaders &gt; 7.21.1, org.openide.nodes &gt; 7.21.1, org.openide.text &gt; 6.37.1, org.openide.util &gt; 8.15.1, org.openide.util.lookup &gt; 8.8.1" OpenIDE-Module-Name="XWork Support" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="Code completion for XWork framework files" OpenIDE-Module-Specification-Version="0.5.4"/>
+    
+</module>
+
+</module_group>
+
+<module_group name="Libraries">
+
+<module codenamebase="org.netbeans.modules.web.frameworks.struts2lib.v2_3_15" distribution="org-netbeans-modules-web-frameworks-struts2lib-v2_3_15.nbm" downloadsize="1123866" homepage="http://struts.apache.org" license="2A5A11E5" moduleauthor="Aleh Maksimovich" needsrestart="false" releasedate="2013/11/04">
+    <manifest AutoUpdate-Show-In-Client="true" OpenIDE-Module="org.netbeans.modules.web.frameworks.struts2lib.v2_3_15" OpenIDE-Module-Display-Category="Libraries" OpenIDE-Module-Implementation-Version="131104" OpenIDE-Module-Java-Dependencies="Java &gt; 1.6" OpenIDE-Module-Long-Description="Apache Struts 2.3.15 is an elegant, extensible framework for creating enterprise-ready Java web applications. It is available in a full distribution, or as separate library, source, example and documentation distributions. &lt;br/&gt;&#10;This module wraps Struts2 version 2.3.15 core dependencies jar files. It  registers libraries in Library Manager." OpenIDE-Module-Name="Struts2 Core 2.3.15 Library" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="Struts2 Core Dependencies 2.3.15" OpenIDE-Module-Specification-Version="1.0"/>
+    
+</module>
+
+</module_group>
+
+<license name="2A5A11E5" url="licenses/2A5A11E5.license"/>
+<license name="E42ACA9D" url="licenses/E42ACA9D.license"/>
+</module_updates>
+

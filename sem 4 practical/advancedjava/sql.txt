@@ -1,0 +1,1 @@
+Create Table myImages(ID int, Name varchar(20), Description varchar(50), Image longblob);

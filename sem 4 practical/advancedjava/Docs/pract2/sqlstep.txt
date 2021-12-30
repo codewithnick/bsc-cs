@@ -1,0 +1,16 @@
+/connect root@localhost
+create database loginform;
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+
+
+create table myrecord(id int  ,
+                                             username varchar(20),
+                                             password varchar(20),
+                                             mobileno varchar(10)
+                                             );
+insert into myrecord values (0,"nick","nick","9898988998");
+
+select * from myrecord where username='nick' and password = 'nick';
+update myrecord set password=newpass where id=id 

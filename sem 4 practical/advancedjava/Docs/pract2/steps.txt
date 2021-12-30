@@ -1,0 +1,26 @@
+create connection object
+"url","username","password"
+
+createstatemnt
+select javasql statement
+
+string sql query
+Resultset r=stmt.executeQuery
+if(r.next())
+	(joptionpane.showmessagedailog)
+
+
+
+click on services tab
+
+expand database option
+click on drivers
+click on link and install driver
+of range 5.1.40-5.1.49
+
+zip extract
+./bin/.jar
+
+go to libraries and andd jar folder
+
+

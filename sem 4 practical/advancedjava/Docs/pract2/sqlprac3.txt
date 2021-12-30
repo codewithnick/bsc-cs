@@ -1,0 +1,6 @@
+registration
+loginid has to be autogenrated
+b)login form 
+c) change password
+d)delete record
+e)

@@ -1,0 +1,206 @@
+import java.util.Scanner;
+ 
+class Power {
+ 
+    static boolean Power(int n)
+    {
+        if (n == 0)
+            return false;
+         
+        while (n != 1)
+        {
+            if (n % 2 != 0)
+                return false;
+            n = n / 2;
+        }
+        return true;
+    }
+ 
+    public static void main(String args[]){
+	Scanner in = new Scanner(System.in);
+      	System.out.println("Input a number : ");
+      	int n = in.nextInt(); 
+
+        if (Power(n))
+            System.out.println("Its a power of 2");
+        else
+            System.out.println("Its not power of 2");
+ 
+       }
+}
+
+
+
+import java.util.Scanner;
+ 
+class Equa{
+    public static void main(String args[]){
+	Scanner in = new Scanner(System.in);  	
+	System.out.println("To find x1 and x2 of linear equation ax1+bx2=m and cx1+dx2=n");
+	System.out.println("Enter a b c d m n ");
+      	int a = in.nextInt(); 
+	int b = in.nextInt(); 
+	int c = in.nextInt(); 
+	int d = in.nextInt();
+	int m = in.nextInt(); 
+	int n = in.nextInt();  
+	float x1,x2;
+	x1=((m*d)-(b*n))/((a*d)-(c*b));
+		x2=((n*a)-(m*c))/((a*d)-(c*b));
+        if ((a*d)-(c*b)==0)
+		System.out.println("Enter proper values");
+            
+        else
+		
+		System.out.println("x1= "+x1+" x2= "+x2);
+ 
+       }
+}
+
+
+
+import java.util.Scanner;  
+class Strings
+{  
+public static void main(String args[])  
+{  
+String s;  
+Scanner in = new Scanner(System.in);  
+System.out.print("Enter a String: ");  
+s=in.nextLine();            
+System.out.print("After reverse string is: ");  
+for(int i=s.length();i>0;--i)                
+{  
+System.out.print(s.charAt(i-1));              
+}  
+}  
+}
+
+
+
+
+
+import java.util.Scanner;
+ 
+class Tri{
+    public static void main(String args[]){
+	Scanner in = new Scanner(System.in);  	
+
+	System.out.println("Enter no of rows:  ");
+      	int n = in.nextInt();
+	int b=1,i,j;
+	for(i=1;i<=n;i++){
+		for(j=1;j<=i;j++){
+			if((i+j)%2==1)
+				System.out.print("0");
+			else
+				System.out.print("1");
+			
+		}
+		System.out.println();
+	}
+
+}
+
+}
+
+
+
+import java.util.Scanner;
+ 
+class Distance{
+    public static void main(String args[]){
+	Scanner in = new Scanner(System.in);
+	int i,n,t,a,u;
+	float dis=0;  
+	System.out.println("Enter intervals to calculate");
+	System.out.println("Distance=ut+(at2)/2");
+	n = in.nextInt(); 
+	for(i=1;i<=n;i++){
+	System.out.println("Enter Time Velocity Accelration for "+i+" interval");
+      	t = in.nextInt(); 
+	u = in.nextInt(); 
+	a = in.nextInt(); 
+	dis=dis+((u*t)+(a*(t*t)/2));
+}
+	 
+	
+		System.out.println("Total distance travel is: "+dis);
+            
+       
+		
+}		
+       
+}
+
+
+
+
+import java.util.Scanner;
+ 
+class Factorial {
+ 
+    static int fact(int n)
+    {
+        if (n == 0)
+            return 1;
+         
+        
+        return n*fact(n-1);
+    }
+ 
+    public static void main(String args[]){
+	Scanner in = new Scanner(System.in);
+      	System.out.println("Input a number : ");
+      	int n = in.nextInt(); 
+
+        
+            System.out.println("Factorial of is"+fact(n));
+        
+       }
+}
+
+
+import java.util.Scanner;
+ 
+class Factorial {
+ 
+    static int fact(int n)
+    {
+       int f=1,i;
+	if(n==0)
+		return 1;
+	else{
+		for(i=1;i<=n;i++){
+			f*=i;
+		}
+	return f;
+	}
+    }
+ 
+    public static void main(String args[]){
+	Scanner in = new Scanner(System.in);
+      	System.out.println("Input a number : ");
+      	int n = in.nextInt(); 
+        System.out.println("Factorial of is"+fact(n));
+        
+       }
+}
+
+
+
+
+import java.util.Scanner;
+ 
+class Power{
+    public static void main(String args[]){
+	Scanner in = new Scanner(System.in);
+	int p,y,d,s;
+	System.out.println("Depreciation=(Purchase price-Salvage value)/(Years of Service)");
+	System.out.println("Enter Purchase_price Depreciation and Years_of_Service: ");
+      	p = in.nextInt(); 
+	y = in.nextInt(); 
+	d = in.nextInt(); 
+	s=p-(d*y);
+	System.out.println("Salvage value is: "+s);
+}	}

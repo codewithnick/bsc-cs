@@ -1,0 +1,2 @@
+D:\Nikhil projects\bsc cs\sem 5 practical\ws\pract1\pract1\obj\Debug\pract1.csproj.AssemblyReference.cache
+D:\Nikhil projects\bsc cs\sem 5 practical\ws\pract1\pract1\obj\Debug\pract1.csproj.CoreCompileInputs.cache

@@ -1,0 +1,22 @@
+- Create a website of your name that shows your information
+- Implement a basic calculator (without using functions)
+- Create a form that accepts 2 numbers from 2 text fields, an operation (+,-,*,/) 
+from third text field. When you click “Result” button, the result of the expression should be 
+displayed in 4th disabled text field. Include a radio button to choose 
+whether the result should be integer or float [use switch case].
+- Create an ASP.net project that accepts the Principal amount, no. of years, Rate of interest
+ from 3 text fields. When you click on “Calculate Interest” button the data is send to a function
+ that returns simple interest. When you click on “final amount” button the final amount by adding the 
+principal amount and interest should be displayed (Use function).
+- Create a Reservation form for Mumbai- to – Pune journey containing 3 text fields to enter names, 3 text fields to enter age 
+and a text field to show Final bill. It should also contain a radio button showing the type of journey (A.C/ Non-A.C). 
+Charges of (A.C/non-A.C) modes of journey are fixed but only for child with age <5 & senior citizen with age > 60 the rates are half. 
+4% service charges are applied on Final Amount. As per the passenger enter the final bill.
+- Add validations name should be not null, age should be within (21 to 100)  and email should be in specific format, 
+password field should not be empty, retype password should be same as password field.
+- Design ASP.Net pages for state management using: a) Calendar b) Ad. Rotator 
+c) MultiView Control
+- A news channel wants to conduct a survey of some famous personalities of the year. The user initially inputs his/her name, age and email. 
+The survey will be valid only if user is above 18 years of age and has an email id. First page allows user to select Best Sportsperson, 2nd page asks 
+Best writer and the third- best minister through dropdownlist. At the end, it shows a thank you message with user’s name and shows all the choices made by him/her.
+- Design an ASP.net Master web page and use it other (at least 2-3 ) content pages.
