@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Emerging Infectious Diseases Journal</title>
+        <description>This list contains articles published online early release.</description>
+        <link>https://wwwnc.cdc.gov/eid/early-release</link>
+        <image>
+            <title>Emerging Infectious Diseases Journal</title>
+            <url>https://wwwnc.cdc.gov/eid/images/og-eid-logo-2.jpg</url>
+            <link>https://wwwnc.cdc.gov/eid/early-release</link>
+            <width>1200</width>
+            <height>630</height>
+            <description>Visit EID</description>
+        </image>
+        <language>en-us</language>
+        <webMaster>eideditor@cdc.gov (EID Questions)</webMaster>
+                <item>
+                    <title>Reassessing Reported Deaths and Estimated Infection Attack Rate during the First 6 Months of the COVID-19 Epidemic, Delhi, India</title>
+                    <description>M. Pons-Salort et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-0879_article</link>
+                    <pubDate>Fri, 25 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Recurrent SARS-CoV-2 RNA Detection after COVID-19 Illness Onset during Pregnancy</title>
+                    <description>I. Griffin et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-2354_article</link>
+                    <pubDate>Fri, 25 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Genomic Epidemiology of Early SARS-CoV-2 Transmission Dynamics, Gujarat, India</title>
+                    <description>J. Raghwani et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-2053_article</link>
+                    <pubDate>Thu, 24 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Durability of Antibody Response and Frequency of SARS-CoV-2 Infection 6 Months after COVID-19 Vaccination in Healthcare Workers</title>
+                    <description>E. D. Laing et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-2037_article</link>
+                    <pubDate>Thu, 24 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Hantavirus Pulmonary Syndrome in a COVID-19 Patient, Argentina, 2020</title>
+                    <description>R. M. Coelho et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-1837_article</link>
+                    <pubDate>Thu, 24 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Diminishing Immune Responses against Variants of Concern in Dialysis Patients 4 Months after SARS-CoV-2 mRNA Vaccination</title>
+                    <description>A. Dulovic et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-1907_article</link>
+                    <pubDate>Wed, 23 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>SARS-CoV-2 IgG Seroprevalence among Blood Donors as a Monitor of the COVID-19 Epidemic, Brazil</title>
+                    <description>D. Chaves et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-1961_article</link>
+                    <pubDate>Fri, 18 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Early Circulation of SARS-CoV-2, Congo, 2020</title>
+                    <description>N. Bonguili et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-2476_article</link>
+                    <pubDate>Fri, 18 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Increased COVID-19 Severity among Pregnant Patients Infected with SARS-CoV-2 Delta Variant, France</title>
+                    <description>S. Zayet et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/5/21-2080_article</link>
+                    <pubDate>Fri, 18 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Community Transmission of SARS-CoV-2 Omicron Variant, South Korea, 2021</title>
+                    <description>E. Kim et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/22-0006_article</link>
+                    <pubDate>Wed, 16 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Multisystem Inflammatory Syndrome in Adult after First Dose of mRNA Vaccine</title>
+                    <description>Y. Miyazato et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/21-2585_article</link>
+                    <pubDate>Fri, 11 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+                <item>
+                    <title>Amplification Artifact in SARS-CoV-2 Omicron Sequences Carrying P681R Mutation, New York, USA</title>
+                    <description>A. Heguy et al.</description>
+                    <link>https://wwwnc.cdc.gov/eid/article/28/4/22-0146_article</link>
+                    <pubDate>Thu, 03 Feb 2022 05:00:00 GMT</pubDate>
+                </item> 
+
+    </channel>
+</rss>
+
