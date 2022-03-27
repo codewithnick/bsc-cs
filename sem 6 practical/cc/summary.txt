@@ -1,0 +1,1124 @@
+PRACTICAL NO: 1
+
+
+AIM: To study cloud architecture and cloud computing model.
+
+THEORY/NOTES:
+Cloud computing enables companies to consume compute resources as a utility -- just like electricity -- rather than having to build and maintain computing infrastructures in-house. Cloud computing promises several attractive benefits for businesses and end users.
+Three of the main benefits of cloud computing include:
+
+●		Self-service provisioning: End users can spin up computing resources for almost any type of workload on-demand.
+●	Elasticity: Companies can scale up as computing needs increase and then scale down again as demands decreases.
+●	Pay per use: Computing resources are measured at a granular level, allowing users to pay only for the resources and workloads they use.
+Four types of Deployment models: (Public , Private, Hybrid or Community Cloud )
+
+Private cloud services are delivered from a business' data center to internal users. This model offers versatility and convenience, while preserving management, control and security. Internal customers may or may not be billed for services through IT chargeback.
+In the Public cloud model, a third-party provider delivers the cloud service over the Internet. Public cloud services are sold on-demand, typically by the minute or the hour. Customers only pay for the CPU cycles, storage or bandwidth they consume. Leading public cloud providers include Amazon Web Services (AWS), Microsoft Azure, IBM/SoftLayer and Google Compute Engine.
+Hybrid cloud or heterogeneous clouds, is a combination of public cloud services and on-premises private cloud – with orchestration and automation between the two.
+Communityclouds. The cloud is characterized by a multi-administrative domain involving different deployment models (public, private, and hybrid), and it is specifically designed to address the needs of a specific industry.
+Three types of Service models: (IaaS, PaaS, SaaS)
+IT people talk about three different kinds of cloud computing, where different services are being provided for you. Note that there's a certain amount of vagueness about how these things are defined and some overlap between them.
+●	Infrastructure as a Service (IaaS) means you're buying access to raw computing hardware over the Net, such as servers or storage. Since you buy what you need and pay-as-you-go, this is often referred to as utility computing. Ordinary web hosting is a simple example of IaaS: you pay a monthly subscription or a per-megabyte/gigabyte fee to have a hosting company serve up files for your website from their servers.
+●	Software as a Service (SaaS) means you use a complete application running on someone else's system. Web-based email and Google Documents are perhaps the best-known examples. Zoho is another well-known SaaS provider offering a variety of office applications online.
+ 
+●	Platform as a Service (PaaS) means you develop applications using Web-based tools, so they run on systems software and hardware provided by another company. So, for example, you might develop your own ecommerce website but have the whole thing, including the shopping cart, checkout, and payment mechanism running on a merchant's server. Force.com (from salesforce.com) and the Google App Engine are examples of PaaS.
+Advantages:
+
+Cloud computing has some interesting characteristics that bring benefits to both cloud serviceconsumers (CSCs) and cloud service providers (CSPs). These characteristics are:
+•	No up-front commitments
+
+•	On-demand access
+
+•	Nice pricing
+
+•	Simplified application acceleration and scalability
+
+•	Efficient resource allocation
+
+•	Energy efficiency
+
+•	Seamless creation and use of third-party services
+
+Disadvantages
+
+Instead of purchasing computers and software, cloud computing means you buy services, so one-off, upfront capital costs become ongoing operating costs instead. That might work out much more expensive in the long-term.
+If you're using software as a service (for example, writing a report using an online word processor or sending emails through webmail), you need a reliable, high- speed, broadband Internet connection functioning the whole time you're working.
+If you're buying in services, you can buy only what people are providing, so you may be restricted to off-the-peg solutions rather than ones that precisely meet your needs. Not only that, but you're completely at the mercy of your suppliers if they suddenly decide to stop supporting a product you've come to depend on. Instead of using "generative" systems (ones that can be added to and extended in exciting ways the developers never envisaged), you're effectively using "dumb terminals" whose uses are severely limited by the supplier.
+
+
+CONCLUSION:
+Cloud computing enables a convenient and on-demand network
+access to a wide range of resources. The different services and also the deployment models allow flexible service provider interaction with minimal human intervention. It saves costs but also can lead to risk issues and suspension of resources when in huge quantity.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PRACTICAL NO: 2
+
+
+
+AIM: Installation and Configuration of virtualization using KVM.
+OBJECTIVES: Understand the concepts of virtualization.Understand KVM architecture and its configuration.
+
+HARDWARE / SOFTWARE REQUIRED:Ubuntu operating system open source software KVM internet
+
+THEORY:
+Virtualization is software that separates physical infrastructures to create various dedicated resources. It is the fundamental technology that powers cloud computing. The technology behind virtualization is known as a virtual machine monitor (VMM) or virtual manager, which separates compute environments from the actual physical infrastructure. There are three areas of IT where virtualization is making head roads, network virtualization, storage virtualization and server virtualization.
+•	Network virtualization is a method of combining the available resources in a network by splitting up the available bandwidth into channels, each of which is independent from the others, and each of which can be assigned (or reassigned) to a particular server or device in real time.
+•	Storage virtualization is the pooling of physical storage from multiple network storage devices into what appears to be a single storage device that is managed from a central console. Storage virtualization is commonly used in storage area networks (SANs).
+•	Server virtualization is the masking of server resources (including the number and identity of individual physical servers, processors, and operating systems) from server users.
+
+PROCEDURE:
+
+Installation Steps:
+
+1.	#sudo apt-get update
+
+2.	#sudo grep -c “svm\|vmx” /proc/cpuinfo
+
+3.	#sudo apt-get install qemu-kvm libvirt-bin bridge-utils virt-manager
+
+QEMU is a free and open-source emulator that performs hardware virtualization.
+
+Libvirtis a C toolkit to interact with the virtualization capabilities of recent versions of Linux (and other OSes). The virt-manager application is a desktop user interface for managing virtual machines through libvirt.
+The bridge-utils package contains a utility needed to create and manage bridge devices.
+
+After installing libvirt-bin, the user used to manage virtual machines will need to be added to the libvirtd
+group. Doing so will grant the user access to the advanced networking options.
+ 
+4.	#sudo adduser asmita #sudo adduser asmita libvirtd
+After running this command, log out and log back in as asmita
+
+5.	Run following command after logging back in as asmita and you should see an empty list of virtual machines. This indicates that everything is working correctly.
+#virsh -c qemu:///system list
+6.	Open Virtual Machine Manager application and Create Virtual Machine #virt-manager
+	SNAPSHOTS	
+
+Step 1: #sudo apt-get update
+Step 2: #sudo grep -c “svm\|vmx” /proc/cpuinfo
+ 
+Step 3: #sudo apt-get install qemu-kvm libvirt-bin bridge-utils virt-manager
+ 
+Step 4: #sudo adduser username
+
+After running this command, log out and log back in as username
+Step 5: #sudo adduser nick libvirtd
+
+After running this command, log out and log back in as username
+Step 6: Open Virtual Machine Manager application and Create Virtual Machine #virt-manager as shown below
+ 
+Step 7: Create a new virtual machine as shown below
+Step 8: Install TinyCorepure operating system on virtual
+Step 9: Installation of TinyCorepure on virtual machine
+
+CONCLUSION:
+Installation and configuration of KVM have been done successfully onto Ubuntu and users added. Like this we can create as many virtual machines as possible on OS and can install any operating systems onto it.
+ 
+
+
+
+
+
+
+
+
+
+
+PRACTICAL NO: 3
+
+AIM: Study and implementation of Infrastructure as a Service.
+
+THEORY:
+OpenStack is a free and open-source software platform for cloud computing, mostly deployed as infrastructure-as-a-service, whereby virtual servers and other resources are made available to customers.
+Written in: Python
+License: Apache License 2.0
+Stable release: Rocky (2018.08.30) / 30 August 2018; 5 months ago Initial release date: 21 October 2010
+OpenStack Components
+
+Compute (Nova)
+OpenStack Compute is a cloud computing fabric controller, which manages pools of computer resources and work with virtualization technologies, bare metals, and high-performance computing configurations. Nova’s architecture provides flexibility to design the cloud with no proprietary software or hardware requirements and also delivers the ability to integrate the legacy systems and third-party products.
+Nova can be deployed using hypervisor technologies such as KVM, VMware, LXC, XenServer, etc. It is used to manage numerous virtual machines and other instances that handle various computing tasks.
+
+Image Service (Glance):
+OpenStack image service offers discovering, registering, and restoring virtual machine images. Glance has client-server architecture and delivers a user REST API, which allows querying of virtual machine image metadata and also retrieval of the actual image. While deploying new virtual machine instances, Glance uses the stored images as templates.
+OpenStack Glance supports Raw, VirtualBox (VDI), VMWare (VMDK, OVF), Hyper-V (VHD), and Qemu/KVM (qcow2) virtual machine images.
+
+
+
+Object Storage (Swift):
+OpenStack Swift creates redundant, scalable data storage to store petabytes of accessible data. The stored data can be leveraged, retrieved and updated. It has a distributed architecture, providing greater redundancy, scalability, and performance, with no central point of control.
+Swift is a profoundly available, shared, eventually consistent object store. It helps organizations to store lots of data safely, cheaply and efficiently. Swift ensures data replication and distribution over various devices, which makes it ideal for cost-effective, scale-out storage.
+
+Dashboard (Horizon)
+Horizon is the authorized implementation of OpenStack’s Dashboard, which is the only graphical interface to automate cloud-based resources.
+ 
+ 
+
+Identity Service (Keystone)
+Keystone provides a central list of users, mapped against all the OpenStack services, which they can access. It integrates with existing backend services such as LDAP (Lightweight Directory Access Protocol) while acting as a common authentication system across the cloud computing system.
+Keystone supports various forms of authentication like standard username & password
+
+Networking (Neutron):
+Neutron provides networking capability like managing networks and IP addresses for OpenStack. It ensures that the network is not a limiting factor in a cloud deployment and offers users with self-service ability over network configurations. OpenStack networking allows users to create their own networks and connect devices and servers to one or more networks. Developers can use SDN technology to support great levels of multi-tenancy and massive scale.
+
+Block Storage (Cinder)
+
+
+OpenStack Cinder delivers determined block-level storage devices for application with OpenStack compute instances. A cloud user can manage their storage needs by integrating block storage volumes with Dashboard and Nova.
+Cinder can use storage platforms such as Linux server, EMC (ScaleIO, VMAX, and VNX), Ceph, Coraid, CloudByte, IBM, Hitachi data systems, SAN volume controller, etc. It is appropriate for expandable file systems and database storage.
+ 
+Telemetry (Ceilometer)
+Ceilometer delivers a single point of contact for billing systems obtaining all of the measurements to authorize customer billing across all OpenStack core components. By monitoring notifications from existing services, developers can collect the data and may configure the type of data to meet their operating requirements.
+
+Orchestration (Heat)
+Heat is a service to orchestrate multiple composite cloud applications through both the CloudFormation-compatible Query API and OpenStack-native REST API, using the AWS CloudFormation template format.
+PROCEDURE:
+Installation Steps: for single machine installation.
+▪	sudo apt-get update
+o	Add user
+▪	sudo useradd -s /bin/bash -d /opt/stack -m stack
+
+▪	sudo apt-get install sudo -y
+
+▪	echo "stack ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+stack run commands, run from any host,all users nd groups without password & all commands
+o	login as stack user
+o	Download DevStack
+▪	sudoapt-getinstallgit -y
+
+▪	gitclonehttps://git.openstack.org/openstack-dev/devstack
+
+▪	cddevstack
+
+o	Copy local.conf file from devstack/samples/local.conf. to root folder of devstack.
+local.conf
+[[local|localrc]] FLOATING_RANGE=192.168.1.224/27 FIXED_RANGE=10.11.12.0/24 FIXED_NETWORK_SIZE=256 FLAT_INTERFACE=eth0
+ADMIN_PASSWORD=iycadmin DATABASE_PASSWORD=$ADMIN_PASSWORD RABBIT_PASSWORD=$ADMIN_PASSWORD SERVICE_PASSWORD=$ADMIN_PASSWORD
+Add ip address to the /etc/hosts file
+-> sudo vim /etc/hosts ip devstack
+ 
+ cat /etc/hosts
+
+127.0.0.1	localhost
+127.0.1.1	iycserver
+10.10.7.142	devstack
+
+# The following lines are desirable for IPv6 capable hosts
+
+::1	ip6-localhost ip6-loopback fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix ff02::1 ip6-allnodes ff02::2 ip6-allrouters
+ 
+ Run DevStack:
+
+
+SNAPSHOTS:
+➔	sudo apt-get update
+ 
+
+./stack.sh
+  
+➔	Add user
+◆	sudo useradd -s /bin/bash -d /opt/stack -m stack
+◆	sudo apt-get install sudo -y
+◆	echo "stack ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+➔	stack run commands, run from any host,all users and groups without password & all commands
+o	login as stack user
+o	Download DevStack
+▪	sudoapt-getinstallgit -y 
+●	gitclonehttps://git.openstack.org/openstack-dev/devstack
+▪	cddevstack
+
+o Copy local.conf file from devstack/samples/local.conf. to root folder of devstack. edit in the same as specified above .
+•	add ip address to the /etc/hosts file
+sudo vim /etc/hosts
+ip devstack
+•	cat /etc/hosts
+127.0.0.1  localhost
+127.0.1.1 iycserver 10.10.7.142	devstack
+
+Run DevStack:
+./stack.sh 
+ 
+HOW TO CREATE NEW VM IN OPENSTACK DASHBOARD (HORIZON)?
+
+Go to Project → Compute → Instances. Click "Launch Instance".
+Insert the name of the Instance (eg. "tycs") and click Next button.
+Select Instance Boot Source (eg. "Image"), and choose desired image (eg. "cirros-0.4.4-x86_64- disk") by clicking on arrow.
+Choose Flavour (eg. eo1.xsmall).
+
+Click "Networks" and then choose desired networks
+ 
+Choose or generate SSH keypair for your VM. Next, launch your instance by clicking on blue button
+
+
+You will see "Instances" menu with your newly created VM. Open the drop-down menu and choose "Console".
+
+
+ 
+Open the drop-down menu and choose "Console".
+
+
+In Network Topology we can see topology. Network  Network Top
+
+In Networks it display those network which we added.
+
+Click on the black terminal area(to activate access to the console). Type: eoconsole and hit enter.
+
+USING PLATFORM9 IN SANDBOX FORMAT
+
+Not Supported in 2019-2020
+CONCLUSION:
+OpenStack installed on single machine. + experimented on platform9.Though OpenStack is made up of several other components because of its open nature, the OpenStack community has recognized these nine components as the core components.
+OpenStack will help your business in accelerating the time-to-market, integrating with a variety of key businesses, and delivering the most value from the cloud. So, enterprises need to consider building their cloud platform with OpenStack.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+PRACTICAL NO : 4
+
+AIM:To study and implementation of Storage as a Service
+
+HARDWARE / SOFTWARE REQUIRED:
+Online mode: Google account→ login into the google drive. Offline mode: owncloud server.
+
+THEORY:
+Google Docs:
+Google Docs (docs.google.com) is the most popular web-based word processor available today. Docs is actually a suite of applications that also includes Google Spreadsheets and Google Presentations; the Docs part of the Docs suite is the actual word processing application. When you log in to Google Docs with your Google account, you see the page. This is the home page for all the Docs applications (word processing, spreadsheets, and presentations); all your previously created documents are listed on this page. The leftmost pane helps you organize your documents. You can store files in folders, view documents by type (word processing document or spreadsheet), and display documents shared with specific people.
+
+Collaborating on Databases:
+A local database is one in which all the data is stored on an individual computer.
+
+A networked database is one in which the data is stored on a computer or server connected to a network, and accessible by all computers connected to that network.
+
+Finally, an online or web-based database stores data on a cloud of servers somewhere on the Internet, which is accessible by any authorized user with an Internet connection.
+
+Eg: Cebase
+
+Cebase (www.cebase.com) lets you create new database applications with a few clicks of your mouse; all you have to do is fill in a few forms and make a few choices from some pull- down lists. Data entry is via web forms, and then your data is displayed in a spreadsheet-like layout, You can then sort, filter, and group your data as you like. Sharing is accomplished by clicking the Share link at the top of any data page. You invite users to share your database via email, and then adjust their permissions after they’ve accepted your invitation.
+
+	SNAPSHOTS	
+
+Step 1: Sign into the Google Drive website with your Google account.
+If you don’t have a Google account, you can create one for free. Google Drive will allow you to store your files in the cloud, as well as create documents and forms through the Google Drive web interface. 
+ 
+Step 2: Add files to your drive.
+There are two ways to add files to your drive. You can create Google Drive documents, or you can upload files from your computer. To create a new file, click the CREATE button. To upload a file, click the “Up Arrow” button next to the CREATE button.
+ 
+
+Step 3: Change the wayyour files are displayed.
+ 
+ 
+You can choose to display files by large icons (Grid) or as a list (List). The List mode will show you at a glance the owner of the document and when it was last modified. The Grid mode will show each file as a preview of its first page. You can change the mode by clicking the buttons next to the gear icon in the upper right corner of the page.// List Mode
+
+Step 4: Use the navigation bar on the left side to browse your files.
+“My Drive” is where all of your uploaded files and folders are stored. “Shared with Me” are documents and files that have been shared with you by other Drive users. “Starred” files are files that you have marked as important, and “Recent” files are the ones you have most recently edited.
+•You can drag and drop files and folders around your Drive to organize them as you see fit.
+•Click the Folder icon with a “+” sign to create a new folder in your Drive. You can create folders inside of other folders to organize your files.
+ 
+Step 5: Search for files.
+ You can search through your Google Drive documents and folders using the search bar at the top of your page. Google Drive will search through titles, content, and owners. If a file is found with the exact term in the title, it will appear under the search bar as you type so that you can quickly select it.
+
+Step 6: Click the NEW button.
+A menu will appear that allows you to choose what type of document you want to create. You have several options by default, and more can be added by clicking the “More “ link at the bottom of the menu:
+
+Step 7: Create a new file.
+Once you’ve selected your document type, you will be taken to your blank document. If you chose Google Docs/Sheets/Slides , you will be greeted by a wizard that will help you configure the feel of your document.
+ 
+
+Step 8: Name the file.
+At the top of the page, click the italic gray text that says “Untitled <file type>”. When you click it, the “Rename document” window will appear, allowing you to change the name of your file.
+
+Step 9: Edit your document.
+Begin writing your document as you would in its commercially-equivalent. You will most likely find that Google Drive has most of the basic features, but advanced features you may be used to are not available.
+1.Your document saves automatically as you work on it.
+ 
+ 
+Step 10: Export and convert the file.
+If you want to make your file compatible with similar programs, click File and place your cursor over “Download As”. A menu will appear with the available formats. Choose the format that best suits your needs. You will be asked to name the file and select a download location. When the file is downloaded, it will be in the format you chose.
+ 
+
+Step 11: Share your document.
+Click File and select Share, or click the blue Share button in the upper right corner to open the Sharing settings. You can specify who can see the file as well as who can edit it.
+ 
+
+ 
+Other Capabilities
+
+1.	Edit photos
+2.	Listen Music
+3.	Do drawings
+4.	Merge PDFs
+
+CONCLUSION:
+
+Google Docs provide an efficient way for storage of data. It fits well in Storage as a service (SaaS). It has varied options to create documents, presentations and also spreadsheets. It saves documents automatically after a few seconds and can be shared anywhere on the Internet at the click of a button.
+
+We can demonstrate the same using ownCloud (Refer to Practical No 9) [You own private SaaS]
+	ownCloud is a self-hosted open source file sync and share server.
+	Like "big boys" Dropbox, Google Drive, Box, and others, ownCloud lets you access your files, calendar, contacts, and other data.
+	You can synchronize everything (or part of it) between your devices and share files with others.
+	In 2016, the development of ownCloud was split, and many of the original developers forked the source code to create a competing product, called Nextcloud.
+
+
+
+Features	Nextcloud	ownCloud
+Files
+File Storage	YesUpload, synch, comments, tags, multiple versions, move files via web interface	YesUpload, synch, comments, tags, multiple versions, move files via web interface
+File Sharing	YesShare via user, email, link, social media sites, password protection and expiration date. Can allow user without an account (just email) to edit a document.	YesShare via user, or link, social media sites, password protection and expiration date
+Storage Limitation per User	Yes	Yes
+ 
+
+Clients	NextCloud	ownCloud
+Web Client	Yes	Yes
+Desktop Clients	Windows, Mac, Linux	Windows, Mac, Linux
+Mobile Clients	YesGoogle Play Android client (rated 4 and is free), Apple App store client(rated
+4.7 and is free), F-Droid repository Android client and the MS Windows Store has an app still in testing	YesWindows Mobile client, Google Play Android client (rated 4 and costs
+$4.00), Apple App store client (rated 2.9 and costs $0.99), and Blackberry World has a client
+
+Security	NextCloud	ownCloud
+Two Factor Authentication	YesMultiple methods available, plus enforcement	YesTOTL available
+Scability / Enterprise Support	YesEnterprise level service is supported and the new Global Scale architecture is under development to expand this support further	YesownCloud Enterprise Edition has Enterprise support, but is not open source nor free
+Resource Monitoring	Yes	No
+Third Party Authentication	Yes	Yes
+Role Based Administration	Yes	Yes
+Translations	33 languages available	103 languages available
+ 
+
+
+
+
+
+
+
+
+
+
+PRACTICAL NO: 5
+
+AIM:To Study Cloud IdentityManagement (AWS)
+
+OBJECTIVE:Secure your AWS account using IAM services
+
+●	To understand the security features of Cloud.
+●	To learn the technique of application security management and its complexity
+●	To understand the importance of cloud security management from application point of view
+
+Hardware / Software/Web reference Required: https://www.aws.amazon.com
+
+Theory:
+Identity management is also known as identity and access management.
+IAM refers to a framework of policies and technologies for ensuring that the proper people in
+an enterprise have the appropriate access to technology resources.
+Identity management can involve four basic functions:
+1.	The pure identity function: Creation, management and deletion of identities without regard to access or entitlements;
+2.	The user access (log-on) function: For example: a smart card and its associated data used by a customer to log on to a service or services (a traditional view);
+3.	The service function: A system that delivers personalized, role-based, online, on- demand, multimedia (content), presence-based services to users and their devices.
+4.	Identity Federation: A system that relies on federated identity to authenticate a user without knowing his or her password.
+
+AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources. IAM is a feature of your AWS account offered at no additional charge.
+
+PROCEDURE:
+Step 1: Go to https://www.aws.amazon.com click on “Create an AWS Account"  Enter details in the required field  click on “Continue”
+Step 2 : Select the account type and complete the fields below  click on “Create Account and continue”  Sign out .
+NOTE : Do not provide any credit card details on Payment Information . 
+Step 3: Click on “My Account” and go to “AWS Management Console”  Sign In with your account as a root user.
+Step 4 : After signing in , the AWS Management Console home page is displayed Click on All Services  On Security
+ Identity and compliance click on IAM
+Step 5 : Complete all Security status steps
+Manage Security Credentials  Get Started with IAM Users
+Step 6 : click on Add User  Set User Details  Next : Permission
+Step 7: Click on Attach existing policies directly and select Administrator Access and AmazonAPI Gateway  click on Next till 4th step  Download the csv file wherein Access key ID and login URL of users is stored.
+Step 8: Now login as a user now use the link in console
+Step 9: Go to My security credentials  click on Create access key  Download secret access key .csv file
+Step 10: Go to users , the details w.r.t attached policies is displayed here.
+CONCLUSION: Identity management on AWS done. It gives us the ability to attach/detach our own permissions and policies for securing data for our respective accounts.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PRACTICAL NO : 6
+
+AIM:To Study Cloud Security Management (AWS)
+
+OBJECTIVE:Secure your AWS account using IAM services
+
+●	To understand the security features of Cloud.
+●	To learn the technique of application security management and its complexity
+●	To understand the importance of
+
+●	cloud security management from application point of view
+
+HARDWARE / SOFTWARE REQUIRED: https://www.aws.amazon.com
+
+THEORY:
+Cloud computing security is the set of control-based technologies and policies designed to adhere to regulatory compliance rules and protect information, data applications and infrastructure associated with cloud computing use. Because of the cloud's very nature as a shared resource, identity management, privacy and access control are of concern.
+Physical security:
+
+Cloud service providers physically secure the IT hardware (servers, routers, cables etc.) against unauthorized access, interference, theft, fires, floods etc. and ensure that essential supplies (such as electricity) are sufficiently robust to minimize the possibility of disruption. This is normally achieved by serving cloud applications from 'world-class' (i.e. professionally specified, designed, constructed, managed, monitored and maintained) data centers.
+
+Personnel security:
+
+Various information security concerns relating to the IT and other professionals associated with cloud services are typically handled through pre-, para- and post-employment activities such as security screening potential recruits, security awareness and training programs, proactive security monitoring and supervision, disciplinary procedures and contractual obligations embedded in employment contracts, service level agreements, codes of conduct, policies etc.
+
+Application security:
+
+Cloud providers ensure that applications available as a service via the cloud (SaaS) are secure by specifying, designing, implementing, testing and maintaining appropriate application security measures in the production environment.
+
+PROCEDURE:
+
+Step 1: Go to https://www.aws.amazon.com click on “Create an AWS Account"  Enter details in the required field  click on “Continue”
+Step 2 : Select the account type and complete the fields below  click on “Create Account and continue”  Sign out .
+NOTE : Do not provide any credit card details on Payment Information .
+Step 3: Click on “My Account” and go to “AWS Management Console”  Sign In with your account as a root user.
+Step 4 : After signing in , the AWS Management Console home page is displayed
+Click on All Services  On Security Identity and compilance click on IAM
+Step 5 : Complete all Security status steps
+□	click on Delete your root access  Manage Security Credentials  Get Started with IAM Users
+Step 6 : click on Add User
+□	Set User Details
+□	Next : Permission
+Step 7: Click on Attach existing policies directly and select AdministratorAccess and AmazonAPIGateway  click on Next till 4th step  Download the csv file wherein Access key ID and login URL of users is stored
+Step 8: Now login as a user now
+Step 9: Go to My security credentials  click on Create access key  Download secret access key .csv file
+Step 10: Now to assign MFA, click on Assign MFA Device click on Virtual MFA Device  click on Show QR Code and scan it via Google Authenticator app from your Mobile phone  enter two MFA codes below. Our MFA is assigned
+Step 11: Now go to policies and click on AdministratorAccess and on policy action button click on attach.
+Step 12: Go to users and open it
+CONCLUSION:We have studied how to secure the cloud and its data. Amazon EWS provides the best security with its extended facilities and services like MFA+-device.It also gives you the ability to add your own permissions and policies for securing data more encrypted.
+ 
+
+
+
+
+
+
+
+
+PRACTICAL NO : 7
+
+AIM:Write a program for Web feed.
+
+THEORY:
+RSS: Really Simple Syndication. Concept: Web feed and RSS.
+Objective: This lab is to understand the concept of form and control validation. Scope: Write a program for web feed.
+Software: XML / PHP, HTML/Visual Studio 2010.
+
+PROCEDURE:
+STEP 1: Install the software “RSS Builder”.
+
+
+OR
+
+●	Continue directly with rss code.
+STEP 2: Fill it.
+
+ 
+OR
+
+●	Save the below code with extension.xml
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<generator>RSS Builder by B!Soft</generator>
+<title>Nature</title>
+<link>https://naturebeautii.blogspot.com/</link>
+<description>Beauty of my surrounding. </description>
+<language>en-us</language>
+<managingEditor>asmikadam098@gmail.com</managingEditor>
+<webMaster>asmikadam098@gmail.com</webMaster>
+<copyright>2019 Asmita</copyright>
+<image>
+<title>Nature</title>
+<link>https://naturebeautii.blogspot.com/</link>
+<url>https://3.bp.blogspot.com/-ypPNGdqse1k/WX6_17S5oEI/AAAAAAAAAAM/tIDApQW8-rY- N_oET8LJs9GoL6KHcZkpwCLcBGAs/w128-h128-p-k-no-nu/green-earth.jpg</url>
+</image>
+<item>
+<title>Nature Beast</title>
+<pubDate>Sat, 14 Dec 2019 09:36:23 +0500</pubDate>
+<link>https://naturebeautii.blogspot.com/2017/09/not-just-beautiful-thoughthe-stars- are.html</link>
+<author>asmikadam098@gmail.com</author>
+<comments>https://naturebeautii.blogspot.com/2017/09/not-just-beautiful-thoughthe-stars- are.html</comments>
+<category>nature , beast</category>
+<description><![CDATA[<FONT style="BACKGROUND-COLOR: #f3fdfe" color=#222222 size=4 face=Helvetica><em><strong>he stars are like the trees in the forest</strong></em></FONT>]]></description>
+</item>
+<item>
+<title>&lt;new&gt;</title>
+<pubDate>Sat, 14 Dec 2019 09:24:35 +0500</pubDate>
+<description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>
+
+STEP 3: Open the software Visual studio 2010 Do the following steps:
+➔	File →New → website → visual C# → ASP.NET website→ OK
+
+STEP 4: Now copy that rss file which was saved with .xml extension inside your website folder.
+CODE: rss.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<generator>RSS Builder by B!Soft</generator>
+<title>Nature</title>
+<link>https://naturebeautii.blogspot.com/</link>
+<description>Beauty of my surrounding. </description>
+<language>en-us</language>
+<managingEditor>asmikadam098@gmail.com</managingEditor>
+<webMaster>asmikadam098@gmail.com</webMaster>
+<copyright>2019 Asmita</copyright>
+<image>
+<title>Nature</title>
+ 
+<link>https://naturebeautii.blogspot.com/</link>
+<url>https://3.bp.blogspot.com/-ypPNGdqse1k/WX6_17S5oEI/AAAAAAAAAAM/tIDApQW8-rY- N_oET8LJs9GoL6KHcZkpwCLcBGAs/w128-h128-p-k-no-nu/green-earth.jpg</url>
+</image>
+<item>
+<title>Nature Beast</title>
+<pubDate>Sat, 14 Dec 2019 09:36:23 +0500</pubDate>
+<link>https://naturebeautii.blogspot.com/2017/09/not-just-beautiful-thoughthe-stars- are.html</link>
+<author>asmikadam098@gmail.com</author>
+<comments>https://naturebeautii.blogspot.com/2017/09/not-just-beautiful-thoughthe-stars- are.html</comments>
+<category>nature , beast</category>
+<description><![CDATA[<FONT style="BACKGROUND-COLOR: #f3fdfe" color=#222222 size=4 face=Helvetica><em><strong>he stars are like the trees in the forest</strong></em></FONT>]]></description>
+</item>
+<item>
+<title>&lt;new&gt;</title>
+<pubDate>Sat, 14 Dec 2019 09:24:35 +0500</pubDate>
+<description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>
+
+STEP 5: Add a hyperlink to the rss.xml file <ahref="rss.xml">Click here for feed</a>
+STEP 6: Run the page.
+
+1. Google Chrome:
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+PRACTICAL NO 8
+
+AIM: Study and Implementation of SSO
+
+THEORY/NOTES:
+
+Auth0 provides authentication and authorization as a service.
+
+You can connect any application (written in any language or on any stack) to Auth0 and define the identity providers you want to use (how you want your users to log in).
+Based on your app's technology, choose one of the SDKs (or call our API), and hook it up to your app. Now each time a user tries to authenticate, Auth0 will verify their identity and send the required information back to your app.
+The platform works well for developers and allows them to authenticate APIs and apps with various identity providers on different platforms.
+Auth0 helps you to:
+
+•	Add authentication with multiple authentication sources, either social like Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, amount others, or enterprise identity systems like Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider.
+•	Add authentication through more traditional username/password databases.
+
+•	Add support for linking different user accounts with the same user.
+
+•	Support for generating signed Json Web Tokens to call your APIs and flow the user identity securely.
+•	Analytics of how, when and where users are logging in.
+
+•	Pull data from other sources and add it to the user profile, through JavaScript rules.
+
+Procedure:
+
+Step 1:	Create a free account in Auth0
+
+1.	Go to Auth0 and click Sign Up.
+
+2.	Use Google, GitHub or Microsoft Account to login.
+
+Step 2: Create Account: Account type: Personal, Role : Developer, Project type: as required.
+Step 3: Auth0 account will be created.(below is the dashboard view.
+Step 4: Click on create new user.User will be created.
+Step 5: Go to Welcome to Auth0 window.Go to Test new user login.Enter your Username and password.
+Step 6: Configure social connections 
+Step 7: Go to Connectionsocialtwitter and enter the details
+Step 8: Click on Create Application.--> Regular Web App.--> Select the technology for your web app---> Java( we have selected Java here)
+Step 9: App will be created. Download the sample.
+Step 10: Go to applications settings and Copy the callback URL.
+Applications TestSY- Settings- Allowed Callback URLs- http://localhost:3000/callback And paste it into Allowed callback URL’s
+Step 11: In command prompt switch to the folder containing the downloaded and extracted folder(01-login)Open Command prompt:Type gradlew clean appRun command.
+Step 12: Type http://localhost:3000/callback in the browser.
+Step 13: Now go to the activity and check the user, logins and new sign-ups.
+
+
+Single Sign On (SSO) with Auth0
+
+Single Sign On (SSO) occurs when a user logs in to one application and is then signed in to other applications automatically, regardless of the platform, technology, or domain the user is using.
+Auth0 Universal Login
+
+•	Auth0's Universal Login is the most secure way to authenticate users for your applications.
+•	Universal Login centers around your Auth0 login page.
+•	The login page appearance and behavior are customizable right from the Dashboard. The logo and colors of the login pages can be changed, and in more advanced use cases, the code of each page itself can be modified.
+•	In the Universal Login flow, the user will click a login button or link in your application, which will redirect to the authorize route at the Auth0. If there is no session detected for the end user, Auth0 will redirect them to the login page, where they will be able to login or signup using the connections you configure, such as databases or social connections.
+•	Once the user is authenticated (or if they were already signed in) Auth0 will redirect them to your application, along with the requisite credentials.
+Implementing Universal Login
+In addition to configuring Universal Login for your tenant's applications, you will also need to set up a connection(s) and set up your application in Auth0's dashboard.
+You will also need to configure your application's code to call Auth0's /authorize endpoint in order to trigger Universal Login, and then to deal with the response.
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+PRACTICAL NO :9
+AIM :User Management in cloud. + SaaS
+
+HARDWARE/SOFTWARE REQUIRED: wamp-server 2.5, Owncloud 7.0.15 , OS:Windows 10
+
+Note: ownCloud Server Does Not Support Windows as Server Platform Natively.
+No longer support Microsoft Windows Server as a platform for ownCloud Server 8.1 onwards.
+
+PROCEDURE:
+
+Step 1 : Copy owncloud in C:\wamp\www
+
+Step 2 : Start wamp server and click on phpMyAdmin .
+
+
+Step 3 :click on Database and create new Database : owncloud.
+
+ 
+Step 4 : Click on Recently Created Database, then Click on Privilege and “ADD USER”.
+
+Step 5 : Fill required data ,Select Global Privilege and click on “Go”.
+Step 6 : In the URL bar type http://localhost/owncloud/
+Enter the username , password click on Finish Setup .
+Step 7 : now click on your username an select Users
+Step 8 : Add Users
+Assign Groups and Quota
+Share a File to users
+
+Step 9: logout from admin and login as the user you added (logging as Asmi):
+ 
+Step 10: Add a new file and share with any of the other user (here i had shared with Anjali):
+
+Step 11: logout from Asmi and login as the user you added (logging as Anjali):
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PRACTICAL NO: 10
+
+
+AIM: Case study on Amazon EC2.
+
+Amazon EC2
+
+What is Amazon EC2 exactly ?
+It’s an Cloud Computing Platform.
+
+Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud. Using Amazon EC2 eliminates your need to invest in hardware up front, so you can develop and deploy applications faster. You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
+
+
+History of Amazon EC2:
+
+Amazon announced a limited public beta test of EC2 on August 25, 2006, offering access on a first-come, first-served basis. Amazon EC2 was developed mostly by a team in Cape Town, SouthAfrica led by Chris Pinkham.
+Operating System : Microsoft Windows, Linux , Free BSD. Type: Virtual Private Server
+License : Proprietary Software
+Features:-
+Amazon EC2 provides the following features:
+
+Operating System :
+Microsoft Windows, Linux , Free BSD. It supports all these Operating Systems.
+
+Persistent storage:
+
+An EC2 instance may be launched with a choice of two types of storage for its boot disk or “rootdevice” The first option is a local “instance-store” disk as a root device (originally the only choice).The second option is to use an EBS volume as a root device.
+Elastic IP addresses:
+
+In this sense an Elastic IP Address belongs to the account and not to a virtual machine instance. Itexists until it is explicitly removed, and remains associated with the account even while it isassociated with no instance.
+Amazon CloudWatch:
+
+Amazon CloudWatch is a web service that provides real-time monitoring to Amazon EC2customers on their resource utilization such as CPU, disk, network and replica lag for RDS Databasereplicas.
+ 
+Automated scaling:
+Amazon auto-scaling feature of EC2 allows it to automatically adapt computing capacity to sitetraffic.
+
+Reliability:
+To make EC2 more fault-tolerant, Amazon engineered Availability Zones that are designed to beinsulated from failures in other availability zones.
+How to Get Started with Amazon EC2:
+1)	goto aws.amazon.com
+2)	click on “My Account”
+3)	select “AWS management console” and click on it
+ 
+
+4)	Give Email id in the required field
+5)	if you are registering first time then select “I am a new user” radio button 6)click on “sign in using our secure server” button
+
+
+
+
+Follow the instruction and complete the formalities
+(Note: do not provide any credit card details or bank details) sign out from it and
+ 
+ 
+7)Again, go to “My Account” select “AWS management console”   again by entering the user name and valid password (check “I am returning user and my password is” radio button) Now you are logged in as a Root User
+ 
+
+AWS service-→ All Services tab-→EC2
+
+
+Getting Started with the AWS Management Console Step 1: Set up and log into your AWS account
+Step 2: Launch an Amazon EC2 instance Step 3: Configure your instance
+Step 4: Connect to your instance Step 5: Terminate Instances
+
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+Amazon EC2 Instance Types
+
+Pricing :
+
+Amazon EC2 is free to try. There are five ways to pay for Amazon EC2 instances: On-
+Demand, Savings Plans, Reserved Instances, and Spot Instances. You can also pay
+for Dedicated Hosts which provide you with EC2 instance capacity on physical servers dedicated for your use
+
+
+On-Demand 
+With On-Demand instances, you pay for compute capacity by the hour or the second depending onwhich instances you run. No longer-term commitments or upfront payments are needed.
+You canincrease or decrease your compute capacity depending on the demands of your application and only paythe specified per hourly rates for the instance you use
+
+Spot Instances
+Amazon EC2 Spot instances allow you to request spare Amazon EC2 computing capacity for up to 90%off the On-Demand price.
+
+Savings Plan
+Savings Plans are a flexible pricing model that offer low prices on EC2 and Fargate usage, in exchange fora commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3 year term.
+ 
+Reserved Instances
+Reserved Instances provide you with a significant discount (up to 75%) compared to On- Demandinstance pricing. In addition, when Reserved Instances are assigned to a specific Availability Zone, theyprovide a capacity reservation, giving you additional confidence in your ability to launch instances whenyou need them.
+
+Dedicated Host
+A Dedicated Host is a physical EC2 server dedicated for your use. Dedicated Hosts can help you reducecosts by allowing you to use your existing server-bound software licenses, including Windows Server,SQL Server, and SUSE Linux Enterprise Server (subject to your license terms), and can also help you meetcompliance requirements.
+
+Comparison Between Amazon EC2, Microsoft Azure and Google Cloud .
+
+ 
+Microsoft Azure
+
+What is Microsoft Azure?
+The Azure Service Platform is a big part of Microsoft’s cloud computing initiatives. It is designed specifically for the cloud.
+Microsoft Azure is a platform as a service (PaaS) solution for building and hosting solutions using Microsoft’s products and in their data centres. It is a comprehensive suite of cloud products that allow users to create enterprise-class applications without having to build out their own infrastructure.
+The Azure Service Platform is comprised of three cloud centric products: Windows Azure, SQL Azure and Azure App Fabric controller. These are in addition to the application hosting infrastructure facility.
+
+Windows Azure Platform
+ 
+The two giant cloud platforms i.e.: AWS and Azure
+Market shares:
+
+
+AWS Compute Instance
+2VCPUs+8GB RAMS (Cost ~0.0928 USD/hour)
+Azure Compute Instance
+2VCPUs + 8GB RAMS (Cost ~0.096 USD/hour)
+AWS provide significance number of services.
+Free Tier fall under 2 catogeries:
+Service that will remain free for ever
+>20 free service offered
+
+Example: Amazon SQS SNS Cloud Watch. Other that are valid for 1 year.
+ 
+20 services offered
+Example: Amazon S3,EC2,Elastic Cache etc.
+Both type of service have limit on their usage (example : storage, no of request, Compute time etc),but users are charged for using services that fall under the ‘valid for a year’ categories after the year of experience
+Azure provides a free tier as well it also provide service that belong to the categories of Always free
+25+services offered
+Example: AppSErvice,Function ,Container Service,Active Directory etc. Valid for a year
+8 services offered
+Example:Linux/windows,virtual machine .Blob Storage ,SQL database etc.
+Azure also provides user with 200 USD credits to access all their services for 30 days After which they can use the services that fall under the free for a year an d always free category.
+The largest instance that AWS offers 256 GB RAM +16vCPUS
+The largest instance that Azure offers 224 GB RAM +16 vCPUS
+
+KEY DIFFERENCS.
+
+Both Azure and AWS supports hybrid cloud but Azure supports hybrid cloud better. Azure offers express routes while AWS offers direct connection.
+Azure provides security by offering permissions on the whole account whereas AWS security is provided using defined roles with permission control feature.
+Azure machines are grouped into cloud service and respond to the same domain name with various ports whereas the AWS machine can be accessed separately.
+Azure has a virtual network cloud whereas AWS has Virtual Private Cloud. Azure has 140 availability zone whereas AWS has 61 availability zone.
+
+How Azure works?
+Microsoft Azure is a private and public cloud platform. You may be familiar with Azure services. But, how does it work?
+
+Azure uses a technology known as virtualization, a priori, nothing new up to this point.
+
+Virtualization separates the close coupling between a computer’s CPU or server and its operating system by means of an abstraction layer called a hypervisor. The hypervisor emulates all the functions of a real computer or server and its CPU in a virtual machine. You can run multiple virtual machines at the same time and each virtual machine can run any compatible operating system such as Windows or Linux.
+
+Azure takes this virtualization technology and rethinks it on a massive scale in Microsoft data centres around the world.
+
+Therefore, the cloud is a set of physical servers in one or several data centres that run virtualized hardware on behalf of clients.
+
+To understand it, let’s take a look at the hardware architecture of the data centre.
+
+In each data centre there is a collection of servers located in server racks. Each server rack contains many Blade servers, as well as a network switch that provides network connectivity and a power distribution unit (PDU) that supplies the power. Sometimes, the racks are grouped together into larger units that are known as clusters.
+
+MICROSOFT AZURE SING IN/UP PAGE
+
+Azure user authentication
+ 
+ 
+
+Microsoft azure dashboard
+
+
+
+How to create a virtual machine
+ 
+ 
+
+Select the platform which you want to run as a virtual machine.
+
+
+Select the Size of the virtual machine which you want.
+ 
+ 
+
+Select the disk type and the size of the disk.
+
+
+Networking
+ 
+ 
+Management
+
+
+What services are availablein AZURE?
+Microsoft Azure offers a wide range of services such as software as a service (SaaS), platform as
+a service (PaaS) and Infrastructure as a service (IaaS) , Microsoft Azure is a good choice when it comes to cloud based platform applications.
+
+ Microsoft Azure Services
+•	Computer services
+Virtual machines, infrastructure as a service (IaaS) allowing users to launch general- purpose Microsoft Windows and Linux virtual machines, as well as preconfigured machine images for popular software package
+App services, platform as a service (PaaS) environment letting developers easily publish and manage websites.
+
+•	Mobile services
+Mobile Engagement collects real-time analytics that highlight users’ behavior. It also provides push notifications to mobile devices.[9]
+HockeyApp can be used to develop, distribute, and beta-test mobile apps.
+ 
+ 
+
+•	Storage services
+Storage Services provides REST and SDK APIs for storing and accessing data on the cloud. Queue Service lets programs communicate asynchronously by message using queues.
+File Service allows storing and access of data on the cloud using the REST APIs or the SMB protocol
+ 
+
+•	Data management
+SQL Database, formerly known as SQL Azure Database, works to create, scale and extend applications into the cloud using Microsoft SQL Server technology. It also integrates with Active Directory and Microsoft System Center
+Azure Managed Disks is   a   way   to   simplifies disk   management for   VMs by managing the storage accounts associated with the VM disks. You only need to specify the type (Premium or Standard) and the size of disk you need, and Azure creates and manages the disk for you.
+Azure Managed Disks is   a   way   to   simplifies disk   management for   VMs by managing the storage accounts associated with the VM disks. You only need to specify the type (Premium or Standard) and the size of disk you need, and Azure creates and manages the disk for you.
+ 
+ 
+
+•	Media services
+A PaaS offering that can be used for encoding, content protection, streaming, or analytics
+
+CDN
+A global content delivery network (CDN) for audio, video, applications, images, and other static files. It can be used to cache static assets of websites geographically closer to users to increase performance. The network can be managed by a REST based HTTP API
+
+ 
+•	Management
+Azure Automation, provides a way for users to automate the manual, long-running, error-prone, and frequently repeated tasks that are commonly performed in a cloud and enterprise environment. It saves time and increases the reliability of regular administrative tasks and even schedules them to be automatically performed at regular intervals. You can automate processes using runbooks or automate configuration management using Desired State Configuration.
+ 
+•	Machine learning
+Microsoft Azure Machine Learning (Azure ML) service is part of Cortana Intelligence Suite that enables predictive analytics and interaction with data using natural language and speech through Cortana.[22]
+Cognitive Services (formerly Project Oxford) are a set of APIs, SDKs and services available to developers to make their applications more intelligent, engaging and discoverable. The services include face recognition and verification, celebrity recognition, visual feature tagging, and clipart recognition
+ 
+ 
+Google Cloud Platform
+
+What is Google Cloud Platform ?
+
+Google Cloud (public cloud-based Platform) launched in 2011, is a provider of computing resources for deploying and operating applications on the web. Its specialty is providing a place for individuals and enterprises to build and run software, and it uses the web to connect to the users of that software.
+When to use GCP?
+
+You use a cloud platform such as GCP when you want to build and run an application that can leverage the power of hyperscale data centers in some way i.e. to reach users worldwide, or to borrow sophisticated analytics and AI functions, to utilize massive data storage, and/or Processing Power ,to take advantage of cost efficiencies. You pay not for the machine but only for the resources the machine or Your App ( or Whatever Your ?) uses.
+ 
+
+Steps to Create a Google Cloud Platform Account
+
+1)	Visit https://cloud.google.com/:
+
+
+2)	Click On Get started for Free ,You Have to Sign In With Google Account , SO sign In with Your Google Account
+ 
+ 
+
+3)	Fill in the Details and Agree to the Terms and Conditions
+
+
+ 
+4)	After You Have Entered Correct Details You will be Successfully Signed In as a Google Cloud Platform Customer with your gmail As Your Identity ! The Following Screen Appears
+
+
+5)	Make a New Application with owncloud Instance Using Bitnami by a) Visit the website : bitnami.com/stack/owncloud/cloud/google(Make Sure You are Logged in With Your GCP Account)
+
+
+The above Web Page Appears , Scroll down
+b)	Click on ‘Launch in Google Cloud Platform’
+
+ 
+c)	Then On the Web Page Click on ‘Launch in Compute Engine’
+
+d)	Select a Project Or Create A New Project by Clicking the Appropriate Button
+
+
+Here We Are Creating A new Project
+
+ 
+e)	Then You Have to Enter Your Billing Details , Enter It
+
+The App will Be Shown In Your GCP dashboard .i.e. on this Page
+
+
+ 
+Google Compute Engine (GCE)
+
+•	competes directly against the service that put Amazon Web Services on the map:
+•	used for hosting virtual machines (VMs, servers that exist entirely as software).
+Google Kubernetes Engine (GKE, formerly Google Container Engine)
+
+•	is a platform for a more modern form of containerizedapplication (called "Docker containers")
+•	which is engineered for deployment on cloud platforms.
+Google App Engine
+
+•		provides software developers with tools and languages such as Python, PHP, Microsoft's .NET languages,
+•	for building and deploying a web application directly on Google's cloud.
+•		This is different from building the application locally and deploying it remotely on the cloud;
+•		this is "cloud-native" development: building, deploying, and evolving the application all remotely.
+Google Cloud Storage
+
+•		is GCP's object data store, meaning it accepts any quantity of data and represents that data to its user in–
+•		for example, as files, a database, a data stream, an unordered list of data, or as multimedia.
+
+Nearline
+
+•	is a way to utilize Google Cloud Storage for backup and archival data –
+•	a attractive option for purposes as system backups.
+BigQuery : is a data warehousing system using Google Cloud Storage designed for very large quantities of highly distributed data, enabling SQL queries to be executed across multiple databases of varying structure levels. BigQuery utilizes a columnar storage system in which components of records are stacked onto one another and streamed to a parallel storage system. Such an organization proves useful in analytics applications, which collect broad statistics on simple, often general, relationships between data elements.
+
+Cloud SQL : (not yet ready for public consumption) hosts much more traditional, relational database tables and indexes, using a GCE instance that scales itself up to meet the database's performance demands.
+Cloud AutoML : is a suite of services geared to enable applications to leverage machine learning -- to detect perceptible patterns throughout large quantities of data, and utilize those patterns within a program.
+Cloud Run : is a newly announced service enabling software developers to stage and deploy their applications to Google's cloud using the so-called serverless model -- building and running programs with the appearance of being hosted locally instead of in the cloud.
+
+
+s
+ 
+Advantages of Google Cloud Platform
+
+1.	Pricing : Google Cloud Platform provides 12-month free trial service. After this period, a user can quit all the services if not required or can update if he/she wants to change the current plan. But in other platforms, Pricing is a bit high. They don’t allow the users to switch to other plans available in the platform.
+2.	Database : Google Cloud Storage supports all kinds of databases for e.g. MYSQL and also supports Big Data. Other platforms like Amazon Web Services and Microsoft Azure don’t support both Structured and Relational Databases.
+3.	Live Migration : Google Cloud Hosting allows users to migrate their Virtual machines while others don't.
+4.	Automating the deployment of modern applications : Google is the originator of Kubernetes, which is an orchestrator for applications comprised of many components. Early on, Google took a proactive approach to automating the deployment of  these multifaceted apps to the cloud: for example, opening itself to Kubo, an automation platform originally created to help developers using Cloud Foundry to deploy their applications from dev platforms to the cloud.
+
+
+Disadvantages of Google Cloud Platform
+
+1.	Lack of elastic search
+2.	Support fee is quite hefty: around 150 USD per month for the most basic service (Silver class)
+3.	Downloading data from Google Cloud Storage is expensive. 0.12 USD per GB, more than other cloud providers !
+4.	SDK APIs seem less stable than the Amazon S3 ones.
+5.	It has a complex pricing schema : similar to AWS S3, so it’s easy to get unexpected costs (e.g. number of requests, transfers, etc …)
+6.	Small components, difficult to start
+7.	Out of Free Tier, everything costs.
+8.	Lacks features compared to AWS.
+ 
+ 
+
+
+
+
+

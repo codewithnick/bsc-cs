@@ -1,5 +1,6 @@
 Practical 1
 Aim: Data collection, Data curation and management for Unstructured data (NoSQL)  with Couch DB 
+
 install.Packages("sofa")
 library("sofa")
 x<-Cushion$new()
@@ -29,6 +30,61 @@ doc3<-'{"rollno":"01",
 "name":"UZMA",
 "GRADE":"A"}'
 doc_update(x,dbname = "ds",doc=doc3,docid = "a_1",rev = "1-be7c98bddf8ea7c46f4f401ff387593d")
+
+Practical 2
+Aim: Data collection, Data curation and management for Large-scale Data system (such as MongoDB)
+
+> show dbs
+> db
+> use beginnersbook
+> db
+> show dbs
+> db.user.insert({name:"akansha",age:21})
+> show dbs
+> db.dropDatabase()
+> show dbs
+> use beginnnersbookdb
+> db.begginersbook.insert({ name:"Tom", age:18, website:"www.google.com" })
+> db.begginersbook.insert({ name:"Ron", age:25, website:"www.yt.com" })
+> db.begginersbook.insert({ name:"john", age:35, website:"www.fb.com" })
+> db.begginersbook.find()
+> show collections
+> db.createCollection("students")
+> db.createCollection("teachers",{capped:true,size:1024})
+> db.teachers.drop()
+> show collections
+> db.begginersbook.insert({ name:"john", age:35, website:"www.fb.com",email:"admin@beginnersbooks.com",course:[{name:"MongoDB",duration:7},{name:"Java",duration:14}] })
+> db.begginersbook.find()
+> var beginners=[{"StudentId":1001,"StudentName":"Steve","age":30},{"StudentId":1002,"StudentName":"Negan","age":30},{"StudentId":1003,"StudentName":"Rick","age":31}];
+> db.students.insert(beginners);
+> db.students.find()
+> db.students.find().forEach(printjson)
+> db.students.find({StudentName:"Steve"}).pretty()
+> db.students.find({"age":{$gt:30}}).pretty()
+> db.students.find({"StudentId":{$lt:1003}}).pretty()
+> db.students.find({"StudentName":{$ne:"Negan"}}).pretty()
+> db.begginersbook.insert({name:"jeremy",age:21,website:"www.beginnersbook.com"})
+> db.begginersbook.insert({ name:"Tom", age:18, website:"www.google.com" })
+> db.begginersbook.update({"name":"Tom"},{$set:{"name":"John"}})
+> db.begginersbook.find().pretty()
+> db.begginersbook.update({"name":"Tom"},{$set:{"name":"John"}},{multi:true})
+> db.begginersbook.save({"_id" : ObjectId("61e6232115344ea035aebeff"),"name":"John","age":25})
+> db.begginersbook.find().pretty()
+> db.begginersbook.remove({"name":"John"})
+> db.begginersbook.find().pretty()
+> db.begginersbook.find().pretty()
+> db.begginersbook.remove({"age":18},1)
+> db.begginersbook.find().pretty()
+> db.students.find().pretty()
+> db.students.find({},{"_id":0,"StudentId":1})
+> db.students.find({},{"_id":0,"StudentName":0,"age":0})
+> db.students.find({"StudentId":{$gt:1001}}).pretty()
+> db.students.find({"StudentId":{$gt:1001}}).limit(1).pretty()
+> db.students.find({"StudentId":{$gt:1001}}).limit(1).skip(1).pretty()
+> db.students.find({},{"_id":0,"StudentId":1}).sort({"StudentId":-1})
+> db.students.find({},{"_id":0,"StudentId":1}).sort({"StudentId":1})
+
+
 Practical 3
 Aim:   Practical of Principal Component Analysis(PCA).
 data_iris <- iris[1:4]
@@ -63,7 +119,7 @@ Exp4 Practical of Clustering.
 library(ggplot2)
 scatter <- ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))
 scatter + geom_point(aes(color=Species, shape=Species)) +   theme_bw()+   xlab("Sepal Length") +  ylab("Sepal Width") +   ggtitle("Sepal Length-Width")
-ggplot(data=iris, aes(Sepal.Length, fill = Species))+    theme_bw()+   geom_density(alpha=0.25)+   labs(x = "Sepal.Length", title="Species vs Sepal Length"))
+ggplot(data=iris, aes(Sepal.Length, fill = Species))+    theme_bw()+   geom_density(alpha=0.25)+   labs(x = "Sepal.Length", title="Species vs Sepal Length")
 vol <- ggplot(data=iris, aes(x = Sepal.Length)) 
 vol + stat_density(aes(ymax = ..density..,  ymin = -..density..,fill = Species, color = Species),geom = "ribbon", position = "identity") +   facet_grid(. ~ Species) + coord_flip() + theme_bw()+labs(x = "Sepal Length", title="Species vs Sepal Length") 
 vol <- ggplot(data=iris, aes(x = Sepal.Width))
@@ -71,7 +127,7 @@ vol + stat_density(aes(ymax = ..density..,  ymin = -..density..,fill = Species,c
 irisData <- iris[,1:4]
 totalwSS<-c() 
 for (i in 1:15)
- { 
+{ 
 clusterIRIS <- kmeans(irisData, centers=i)
 totalwSS[i]<-clusterIRIS$tot.withinss
 }
@@ -93,23 +149,6 @@ cl <- kmeans(iris[,-5], 8)
  dis <- dist(iris[,-5])^2 
 sil = silhouette (cl$cluster, dis)
 plot(sil, main = "Clustering Data with Silhoutte plot using 8 Clusters", col = c("cyan", "blue", "orange", "yellow", "red", "gray", "green", "maroon"))
-install.packages("factoextra")
-library(factoextra)
-install.packages("clustertend")
-library(clustertend)
-genx<-function(x){
-runif(length(x), min(x), (max(x)))
-}
-random_df <- apply(iris[,-5], 2, genx)
-install.packages("factoextra")
-library(factoextra)
-install.packages("clustertend")
-library(clustertend)
-genx<-function(x){
-runif(length(x), min(x), (max(x)))
-}
-random_df <- apply(iris[,-5], 2, genx)graph = FALSE)
-res$hopkins_stat
 
 
 
@@ -283,3 +322,15 @@ anova(fit)["Residuals", "Sum Sq"]/qchisq(c(0.025, 0.975), 18,lower.tail = FALSE)
 
 
 
+practical 10
+Aim: Decision Tree
+
+install.packages('party')
+library(party)
+print(head(readingSkills))
+input.dat<-readingSkills[c(1:105),]
+png(file="decision_tree.png")
+output.tree<-ctree(nativeSpeaker~age+shoeSize+score,data=input.dat)
+plot(output.tree)
+dev.off()
+plot(output.tree)

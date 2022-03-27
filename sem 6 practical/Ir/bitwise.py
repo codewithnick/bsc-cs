@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
-docs=['why hello hello there','omg hello pony','she went there?omg']
+
+docs=['why hello hello there','omg hello pony','she went there? omg']
 print(docs)
 vec=CountVectorizer()
 x=vec.fit_transform(docs)
@@ -22,5 +23,5 @@ for i in range(df.shape[0]):
         x.append(a)
 print(x)
 for i in range(df.shape[0]):
-    if(x[i]==1):
+    if(x[i]):
         print("Doc",i)

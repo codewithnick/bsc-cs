@@ -1,0 +1,252 @@
+PRACTICAL 1
+AIM: Creating a Forensic Image using FTK Imager/Encase Imager:
+-	Creating Forensic Image
+-	Check Integrity of Data
+-	Analyse Forensic Image
+-	Creating Forensic Image
+
+STEP 1: Click on File - Create Disk Image - Contents of a Folder – Next. Choose the source file which isthe evidence and click Finish
+STEP 2: Select the destination where you wish the image to be created. Name it appropriately and Finish. 
+-	Check Integrity of Data
+
+STEP 3: Check the source and destination folder name and click on Start. This will begin the process ofcreating the image and once done you can check its integrity by matching the hash values generated using MD5 and SHA1 
+-	Analyse Forensic Image
+
+STEP 4: Select File - Add Evidence Item- Image File – Next. Select the image file which you wish to view 
+OUTPUT:
+ 
+For Physical Drive:
+STEP 1: Click on File - Create Disk Image -Physical Drive– Next. Choose the pen drive which is theevidence and click
+Finish
+STEP 2: Select the destination where you wish the image to be created. Name it appropriately and Finish.
+STEP 3: Check the source and destination folder name and click on Start. This will begin the process ofcreating the image and once done you can check its integrity by matching the hash values generated using MD5 and SHA1
+STEP 4: Select File - Add Evidence Item- Image File – Next. Select the image file which you wish to view
+
+
+
+ 
+
+PRACTICAL 2
+AIM: Data Acquisition: Perform data acquisition using:
+- USB Write Blocker
+
+STEP 1: Open Win Registry Editor using Win + R then regedit
+STEP2: Go to Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ and rightclick to create new key. Name this key “StorageDevicePolicies”
+STEP 3: Within the created key, right click – New DWORD (32-bit Value) name it “WriteProtect”. Change its Hexadecimal value as 1 to make it Write Blocked
+
+OUTPUT:
+Now if we try to copy paste from or into a physical drive the write action (i.e., paste) will be blocked
+
+
+
+
+
+ 
+
+PRACTICAL 3
+AIM: Forensics Case Study:
+- Solve the Case study (image file) provided in lab using Encase Investigator or Autopsy
+
+STEP 1: Open Autopsy and click on New Case. Add case information and specify the Base Directory where you wish to save the case reports. Since we are self-investigating Case Type will be Single-User. Click Next. Add the Optional Information and Finish
+STEP 2: Select Host – Next, then select the data source type in our case is Disk Image – Next, then add the directory where the image file is saved then click Next. Select all for Configure Ingest and Next. Then the data source will be added
+STEP 3: In the hierarchy expand File View within which there is a folder named Deleted Files. Click on it where you can see all the previously deleted files. Right Click – Extract Files, give a name to the extracted file and your deleted file will be recovered
+STEP 4: Click on Tools – Generate Report – Excel – Next – All Results
+OUTPUT:
+
+ 
+
+ 
+ 
+
+PRACTICAL 4
+
+AIM: Capturing and analyzing network packets using Wireshark (Fundamentals):
+-	Identification the live network
+-	Capture Packets
+-	Analyze the captured packets
+
+-	Identification the live network
+Source with no live network will appear as a straight line Here, Wifi2 is our live network
+-	Capture Packets
+Click on Start Icon to begin capturing the packets and when done click on the stop icon to stop the capture
+-	Analyze the captured packets DNS Protocol
+QUIC Protocol
+TCP Protocol
+ARP Protocol
+ICMPv6 Protocol
+ip.addr==192.168.0.103
+User Login: HTTP Protocol:
+TCP Protocol:
+YouTube packets:
+ 
+
+
+
+
+
+
+
+
+PRACTICAL 5
+AIM: Analyze the packets provided in lab and solve the questions using Wireshark:
+-	What web server software is used by www.snopes.com?
+-	About what cell phone problem is the client concerned?
+-	How many web servers are running Apache?
+-	What hosts (IP addresses) think that jokes are more entertaining when they are explained?
+-	What web server software is used by www.snopes.com?
+
+STEP 1: Open AskSnopes.pcapng file into your wireshark. Filter out http and search for snopes.com. Click on that row and move to the second frame, where you will find Hypertext Transfer Protocol expand it to see the Host. Now to add the host as column to the first frame by Right Click – Apply as Column.
+STEP 2: Right Click on the host that says www.snopes.com – Follow – TCP Stream. Here you can see the server which is Microsoft-IIS/5.0
+-	About what cell phone problem is the client concerned?
+To begin search for the keyword cell into the filter by typing “frame matches"(?)cell"” and click on the first row of result. Now move to the second frame, where you will find Hypertext Transfer Protocol expand it to see the GET method where you’ll see what query the client has searched for with respect to cell phone
+-	How many web servers are running Apache?
+
+Into the filter type “ http.server contains "Apache" ” and search. Now click on Statistics – Endpoints.
+Move to Ipv4. Check the Limit to display filter at the bottom and you can see that 22 servers are running Apache 
+-	What hosts (IP addresses) think that jokes are more entertaining when they are explained?
+To begin firstly search the keyword jokes into the filter type “frame matches"(?)jokes"” and click on the first row of result. Now move to the second frame, where you will find Hypertext Transfer Protocol expand it to see the GET method where you’ll see what query the user has searched for i.e. jokes are more entertaining when they are explained . The IP address for the same is 173.241.244.99
+
+ 
+
+
+
+
+PRACTICAL 6
+
+AIM: Using Sysinternals tools for Network Tracking and Process Monitoring:
+-	Check Sysinternals tool
+-	Monitor Live Processes
+-	Capture RAM
+-	Capture TCP/UDP packets
+-	Monitor Hard Disk
+-	Monitor Virtual Memory
+-	Monitor Cache Memory
+
+-	Check Sysinternals tool
+STEP 1: Download and Extract SysInternal Suite. 
+-	Monitor Live Processes
+STEP 1: Open cmd with administrative rights and go to the folder where SysInternals Suite is extracted. And type the command ProcMon this will open The Process Monitoring tool available in SysInternals Suite
+STEP 2: Once the tool opens up, go to Tools – Process Tree and you can view the information about the processes
+-	Capture TCP/UDP packets
+STEP 1: Open cmd with administrative rights and go to the folder where SysInternals Suite is extracted. And type the command TcpView this will open The TCP/ UDP viewing tool available in SysInternals Suite. A prompt appears click Agree
+STEP 2: Once the tool opens you can see certain highlighted process. Yellow stand for Change of State, Red is for Deleted and Green is for Established Connections
+STEP 3: Right Click on any one process and click on WhoIs to lookup for details about the application 
+-	Monitor Virtual Memory
+STEP 1: Open cmd with administrative rights and go to the folder where SysInternals Suite is extracted. And type the command VMMap this will open The Virrtual Machine Mapping tool available in SysInternals Suite. A prompt appears click Agree
+STEP 2: Click OK and you can view the mappings 
+-	Monitor Cache Memory
+STEP 1: Open cmd with administrative rights and go to the folder where SysInternals Suite is extracted. And type the command RAMMap this will open The RAM Mapping tool available in SysInternals Suite. A pop-up appears click Agree. The tool appears and you can see all the cache details. 
+-	Monitor Hard Disk
+STEP 1: Open cmd with administrative rights and go to the folder where SysInternals Suite is extracted. And type the command DiskMon this will open The Disk Monitoring tool available in SysInternals Suite. A pop-up appears click Agree. The tool appears and you can monitor you hard disk. 
+-	Capture RAM
+STEP 1: Download and install the Belkasoft RAM Capturer tool and launch the software and begin the Capture. Now your RAM Capture has been started and once its done you’ll see a file with .mem extension created with your RAM capture information
+ 
+
+
+ 
+
+PRACTICAL 7
+AIM: Recovering and inspecting deleted files
+-	Check for Deleted Files
+-	Recover the Deleted Files
+-	Analyzing and inspecting the recovered files
+Perform this using recovery option in FTK Imager and also Perform manually through command line
+- Recovering file using FTK Imager
+STEP 1: Click on File - Create Disk Image -Physical Drive– Next. Choose the pen drive which is the evidence and click Finish
+STEP 2: Select the destination where you wish the image to be created. Name it appropriately and
+Finish. Check the source and destination folder name and click on Start. This will begin the process of creating the image and once done you can check its integrity by matching the hash values generated using MD5 and SHA1
+STEP 3: Select File - Add Evidence Item- Image File – Next. Select the image file which you wish to view
+OUTPUT:
+-	Recovering deleted data using TestDisk ( Command Line Tool)
+STEP 1: Download Testdisk 7.2 from https://www.cgsecurity.org/Download_and_donate.php/testdisk-7.2- WIP.win64.zip and extract it.
+STEP 2: Connect a pendrive (minimum data for faster recovery) and delete its content.
+STEP 3: Open photorec_win Application from the extracted folder and select the drive from which you wish to recover data and go ahead with the preferred options 
+OUTPUT:
+ 
+ 
+
+
+ 
+ 
+
+PRACTICAL 8
+
+AIM: Acquisition of Cell phones and Mobile devices
+STEP 1: Download and install MOBILedit! Forensic and open it. Also download Forensic Connector on your phone. On your desktop in the first wizard select Phone – Next. Then choose Wi-Fi Connection – Next.
+STEP 2: Open Forensic Connector in your phone and select WiFi and on your desktop type the IP that is visible on your phone and click Next. Your phone will be connected to your desktop
+STEP 3: Your phone name will be visible select it and click Next.
+STEP 4: Add all the required details and select a folder where you wish to save the logs and click Next.
+Select the required options and click Next. After which analysis will begin.
+
+
+ 
+ 
+
+
+PRACTICAL 9
+AIM: Email Forensics
+-	Recovering emails
+-	Analyzing email header
+-	Recovering emails
+
+STEP 1: To begin recovery of deleted e-mail firstly we need to download and install FTK Imager 1.8.1. Once done open and run as administrator. Choose Start a new case – OK 
+STEP 2: Fill in the case details. Browse the location where you wish to save the logs and click Next. Next add your personal details and click Next
+STEP 3: Keep the Case Log Options, Process to Perform, Refine Case and Refine Index default and continue clicking Next.
+STEP 4: To add evidence click on Add Evidence – Individual File. Then browse and choose the evidence file and fill up its description and click OK.
+STEP 5: Now that the evidence file is added click on Next and choose a directory for the evidence image to be saved and click on Finish.
+OUTPUT:
+Expand the files in hierarchy to view the deleted email and to recover them 
+-	Analyzing email header
+
+STEP 1: To analyze the header right click on any one of the deleted e-mails and select Export File. Choose a directory and the options with which you wish to export the files and click OK. Once the e-mail is exported a prompt will appear then you can go to the directory which you chose and you can view the e-mail fore header analysis.
+OUTPUT:
+STEP 2: Another method of header analysis is to right click on a deleted e-mail and click on Launch detached Viewer.
+This will give you a complete view of the deleted e-mail.
+OUTPUT:
+STEP 3: Third way to check the header information is by just clicking on the deleted message and in the bottom tab where the header information will be available
+ 
+
+
+
+
+PRACTICAL 10
+
+AIM: Web Browser Forensics
+-	Web Browser working
+-	Forensics activities on browser
+
+STEP 1: Go to File Menu – Capture History. A pop-up wizard appears choose from which device and which browser you wish to capture history. Next click on Capture and your capture begins
+OUTPUT:
+-	Cache / Cookies analysis
+-	Last Internet activity
+STEP 1: To generate a report right click on the content and click Add to report
+STEP 2: Go to File – Report – Save as PDF
+OUTPUT:
+STEP 3: To export reports Go to File – Export – Export to HTML 
+OUTPUT:
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+
+ 

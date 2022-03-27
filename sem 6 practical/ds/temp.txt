@@ -1,229 +1,285 @@
-<!doctype html>
-<!--[if lt IE 7 ]><html lang="en" class="no-touch no-js ie6"><![endif]-->
-<!--[if IE 7 ]><html lang="en" class="no-touch no-js ie7"><![endif]-->
-<!--[if IE 8 ]><html lang="en" class="no-touch no-js ie8"><![endif]-->
-<!--[if IE 9 ]><html lang="en" class="no-touch no-js ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-touch no-js no-ie"><!--<![endif]-->
-<head>
-  <meta charset="utf-8"/>
-
-  <link rel="preload" href="https://prod-cdn.wetransfer.net/packs/esm/runtime~application-6bffc5249f9b99c25890.es6.js" as="script" type="text/javascript" id="preload-assets" fallback="https://prod-cdn.wetransfer.net/packs/js/runtime~application-839c1a02dc4c7022c65c.js">
-  <link rel="preload" href="https://prod-cdn.wetransfer.net/packs/esm/application-760d7bc2bbd1795003bd.es6.js" as="script" type="text/javascript" id="preload-assets" fallback="https://prod-cdn.wetransfer.net/packs/js/application-00839b1bd65d901cccfa.chunk.js">
-  <link rel="preload" href="https://prod-cdn.wetransfer.net/packs/esm/vendor-6c90319cc17ffeebe822.es6.js" as="script" type="text/javascript" id="preload-assets" fallback="https://prod-cdn.wetransfer.net/packs/js/vendor-d7e851b576c3de64bfaa.chunk.js">
-
-  <link rel="preload" href="https://prod-cdn.wetransfer.net/packs/media/actiefgrotesque/ActiefGrotesque_W_Regular-1f437876.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="https://prod-cdn.wetransfer.net/packs/media/actiefgrotesque/ActiefGrotesque_W_Medium-293e86f0.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="https://prod-cdn.wetransfer.net/packs/media/gt-super-wt/GT-Super-WT-Super-1b214df1.woff" as="font" type="font/woff" crossorigin="anonymous">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-  <meta name="pinterest" content="nopin" />
-  <meta name="referrer" content="origin" />
-    <link rel="stylesheet" media="screen" href="https://prod-cdn.wetransfer.net/packs/css/application-c2764328.chunk.css" />
-      <meta property="og:description" content="1 file sent via WeTransfer, the simplest way to send your files around the world">
-      <meta property="og:title" content="gaurav.docx">
-        <meta property="og:image" content="https://prod-cdn.wetransfer.net/packs/media/images/wt-facebook-9db47080.png">
-    <meta property="og:type" content="website" />
-    <meta property="fb:app_id" content="265125293564341" />
-
-    <meta name="description" content="WeTransfer is the simplest way to send your files around the world. Share large files and photos. Transfer up to 2GB free. File sharing made easy!">
-
-  <meta name="author" content="WeTransfer">
-
-  <link rel="canonical" href="https://wetransfer.com/downloads/4e2de8a6f2a56f621e25a734893aa06a20220319201126/e64307" />
-  <link rel="preconnect" href="https://prod-cdn.wetransfer.net" crossorigin>
-  <link rel="preconnect" href="https://wtplus.wetransfer.com" crossorigin>
-  <link rel="preconnect" href="https://backgrounds.wetransfer.net" crossorigin>
-  <link rel="preconnect" href="https://wetransferbackgrounds-eu.s3.amazonaws.com" crossorigin>
-  <link rel="preconnect" href="https://assets.wetransfer.net" crossorigin>
-  <link rel="preconnect" href="https://e-10220.adzerk.net" crossorigin>
-  <link rel="preconnect" href="https://thanos.wetransfer.net" crossorigin>
-
-  <link rel="shortcut icon" href="https://prod-cdn.wetransfer.net/packs/media/images/favicon-a34a7465.ico" />
-  <link rel="icon" sizes="16x16 32x32" href="https://prod-cdn.wetransfer.net/packs/media/images/favicon-a34a7465.ico">
-  
-  <!-- default favicon -->
-  <link rel="mask-icon" href="https://prod-cdn.wetransfer.net/packs/media/images/favicon-5a543f69.svg" color="#17181A">
-  
-  <!-- iOS: -->
-  <link rel="apple-touch-icon-precomposed" href="https://prod-cdn.wetransfer.net/packs/media/images/apple-touch-icon-bd1315cf.png">
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://prod-cdn.wetransfer.net/packs/media/images/apple-touch-icon-152x152-precomposed-58e4c998.png">
-  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://prod-cdn.wetransfer.net/packs/media/images/apple-touch-icon-180x180-precomposed-fd272b89.png">
-  <link rel="apple-touch-icon-precomposed" sizes="167x167" href="https://prod-cdn.wetransfer.net/packs/media/images/apple-touch-icon-167x167-precomposed-976d4eb8.png">
-  
-  <meta name="application-name" content="WeTransfer"/>
-
-  <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="cKPahsxZOCMGgKSg7KGV/VMDnHzRXhtkw0pLfaHBUlR3u0AwEgZxtSnqPhfxO/x1QMBdmJr1I5nEDRij1Iww3A==" />
-
-    <title dir="ltr">WeTransfer - Send Large Files & Share Photos Online - Up to 2GB Free</title>
-
-  <style type="text/css">
-    .assets-warning-node {
-      display: none;
-      visibility: hidden;
-      position: fixed;
-      background: #fff;
-      z-index: 999;
-      bottom: 0; left: 0; right: 0; top: 0;;
-      padding: 2em;
-      line-height: 1.4;
-      font-family: sans-serif;;
-      font-size: 1.1em;
-    }
-    .assets-warning-node p {
-      max-width: 42em;
-    }
-    .root-node .no-script {
-      position: fixed;
-      background: #E65050;
-      color: #fff;
-      top: 0;
-      left: 0;
-      margin: 0;
-      padding: 1em;
-      font-weight: bold;
-    }
-  </style>
-  
-</head>
-<body>
-
-  <div class="assets-warning-node">
-    <h1>Uh-oh...</h1>
-    <p>
-      We couldn't load some important parts of our website.
-They may have been blocked by your firewall, proxy or browser set-up.
-Try refreshing the page or get in touch through our <a href="https://wetransfer.zendesk.com" rel="external">help center</a>.
-    </p>
-  </div>
-
-  <div class="root-node">
-    <noscript>
-      <p class="no-script">You need a JavaScript-enabled browser to use WeTransfer</p>
-    </noscript>
-  </div>
-  <script src="https://prod-cdn.wetransfer.net/packs/esm/runtime~locale/en-e4808c62cf0a7d29eec1.es6.js"></script>
-  <script src="https://prod-cdn.wetransfer.net/packs/esm/locale/en-a8035650d8f8c7635828.es6.js"></script>
-  
-<script type="text/javascript">
-var __session__ = {"user":{"id":false,"language":"en","accepted_languages":[],"rules":{"maximum_number_of_files":65536,"maximum_number_of_recipients":3,"storage_limit":0,"fair_use_storage_limit":null,"transfer_limit":2147483648,"transfer_limit_for_default_recipient":214748364800,"can_password_protect_transfers":false,"default_free_expiry":"7d","default_pro_expiry":"28d","default_expiry":"7d","can_set_expiration":false}}};
-</script>
+Practical 1
+Aim: Data collection, Data curation and management for Unstructured data (NoSQL)  with Couch DB 
+install.Packages("sofa")
+library("sofa")
+x<-Cushion$new()
+x$ping()
+db_create(x,dbname = 'ds')
+db_list(x)
+doc1<-'{"rollno":"01","name":"ABC","GRADE":"A"}'
+doc_create(x,doc1,dbname = "ds",docid = "a_1")
+doc2<-'{"rollno":"02","name":"PQR","GRADE":"A"}'
+doc_create(x,doc2,dbname = "ds",docid = "a_2")
+doc3<-'{"rollno":"03","name":"xyz","GRADE":"B","REMARK":"PASS"}'
+doc_create(x,doc3,dbname = "ds",docid = "a_3")
+db_changes(x,"ds")
+db_query(x,dbname = "ds",
+selector = list('_id'=list('$gt'=NULL)))$docs
+db_query(x,dbname = "ds",selector = list(GRADE="A"))$docs
+db_query(x,dbname="ds",selector=list(REMARK="PASS"))$docs
+db_query(x,dbname = "ds",selector = list(rollno=list('$gt'='02')),fields=c("name","GRADE"))$docs
+library("jsonlite")
+res<-db_query(x,dbname = "ds",selector = list('_id'=list('$gt'=NULL)),fields=c("name","rollno","GRADE","REMARK"),as="json")
+fromJSON(res)$docs
+doc_delete(x,dbname = "ds",docid = "a_2")
+doc_get(x,dbname = "ds",docid = "a_2")
+doc2<-'{"name":"Sfood","biryani":"TEST","note":"yummy","note2":"yay"}'
+doc_update(x,dbname = "ds",doc=doc2,docid="a_3",rev = "3-b1fb56db955b142c6efd3b3c52fe9e1b")
+doc3<-'{"rollno":"01",
+"name":"UZMA",
+"GRADE":"A"}'
+doc_update(x,dbname = "ds",doc=doc3,docid = "a_1",rev = "1-be7c98bddf8ea7c46f4f401ff387593d")
+Practical 3
+Aim:   Practical of Principal Component Analysis(PCA).
+data_iris <- iris[1:4]
+Cov_data <- cov(data_iris )
+Eigen_data <- eigen(Cov_data)
+PCA_data <- princomp(data_iris ,cor="False")
+Eigen_data$values
+PCA_data$sdev^2
+PCA_data$loadings[,1:4]
+Eigen_data$vectors
+summary(PCA_data)
+biplot (PCA_data)
+screeplot(PCA_data, type="lines")
+ model2 = PCA_data$loadings[,1]
+ model2_scores <- as.matrix(data_iris) %*% model2
+library(class)
+install.packages("e1071")
+library(e1071)
+mod1<-naiveBayes(iris[,1:4], iris[,5])
+ mod2<-naiveBayes(model2_scores, iris[,5])
+table(predict(mod1, iris[,1:4]), iris[,5])
+table(predict(mod2, model2_scores), iris[,5])
 
 
-  
-  <!-- Snowplow start plowing -->
-  <script type="text/javascript">
-  ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
-  p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
-  };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
-  n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","https://cdnjs.cloudflare.com/ajax/libs/snowplow/2.17.3/sp.js","__snowplow__"));
-  __snowplow__.collector = "snowplow.wetransfer.com";
-  __snowplow__.namespace = "38f1"
-  </script>
-  <!-- Snowplow stop plowing -->
-
-  <!-- GTM start managing -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5WF5RH4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <script type="text/javascript">
-    try {
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),'event':'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-5WF5RH4');
-    } catch (e) {/* do nothing */}
-  </script>
-  <!-- GTM stop managing -->
 
 
-  <script type='text/javascript'>var __trackjs__={enabled:!0,token:"c695133a6747471db439aca0a2500556"};</script>
-  <script type='text/javascript'>var __recaptcha__={siteKey:"6LcSPjQUAAAAAA564_maWrrykToPliPNfbKrIcdf"};window.recaptchaOptions={lang:"en"};</script>
 
-  <script type="text/javascript">
-  var __launch_darkly__ = {
-    enabled: true,
-    client_id: "5b82f23280914154b163996e",
-    feature_flags: {"account-state-field":true,"adblock-mitigation":false,"admiral-cookie-consent":false,"alternative-copy-pricing-page-experiment":false,"annual-pricing-experiment":true,"autocomplete-billing-details":false,"batch-insert-files":"control","baxter-tos":false,"bundle-2021-creative":true,"bundle-2021-creative-splashpage":false,"bundle-splashpage-experiment":"c","carbon-calculator":false,"ccpa-banner":false,"ccpa-cookie-banner":false,"cookie-banner":false,"cookie-banner-copy":"none","cookie-wall":false,"cookie-wall-paid-media":false,"cookie-wall-variations":"trees-long","create-team-for-every-account":true,"cross-product-usage-survey-upsell":false,"data-opt-in":false,"direct-storm-upload":false,"disable-splashpage":false,"discovery-portals":true,"dmca-takedown-claim-form":false,"downgrade-intervention":false,"email-transfers":"control","ensemble":true,"expiry-date-refactor":true,"file-insert-batch-size":1,"folder-upload-accessibility":true,"force-account-verification":true,"force-revenue-cat-user-id-on-mobile":false,"free-account-affluent":false,"transfer-verification":true,"free-account-launch":true,"free-account-onboarding":true,"free-account-users-splash-experiment":false,"free-accounts-pro-expiration-reminders":true,"hide-cookie-wall":false,"implement-spaces":false,"increased-transfer-limit":"control","individual-user-email-verification":false,"intercom":true,"iterable-marketing-integration":true,"marketing-pixel-tracking":true,"mobile-push-notifications":true,"nav-sign-up-label-experiment":"variantA","navigation-bar-redesign":true,"new-transfer-expiry-options":true,"no-cookiewall":false,"old-splashpage":false,"show-tiers-pricing-page":true,"onboarding-alignment":true,"one-tier-over-another-experiment":false,"otp-verification":true,"peek-rollout":true,"portal-auth0-requests":true,"portal-callout":false,"portals-anchored-comments":false,"portals-approval-action":true,"portals-audio-player":false,"portals-captions":true,"portals-comments":true,"portals-duedates":true,"portals-localization":false,"portals-preview-polling":true,"portals-report-page":false,"portals-video-player":false,"portals-video-previews":true,"premium-for-pro-users":true,"pricing-cards-hierarchy-experiment":false,"pricing-cards-hierarchy-multivariant":"variantA","pricing-panel-upsell-destination-experiment":false,"pro-account-onboarding":true,"pro-classic-beta-section-flag":false,"pro-panel-classic-transfer":true,"pro-pass-banner-upsells":false,"pro-pass-upsells":false,"profitwell-retain-dunning":true,"programmatic-advertising":false,"programmatic-advertising-bid-floor":"1.0","programmatic-advertising-enable-kevel":true,"programmatic-advertising-exchange-ix":true,"programmatic-advertising-exchange-pubmatic":true,"programmatic-advertising-store-bid":true,"programmatic-preview-staging":false,"programmatic-send-tc-string":true,"progress-panel-banner":false,"progress-panel-tooltip":false,"projects-promo-notice":false,"promo-2021":false,"proxy-adblock":true,"proxy-cookiewall":true,"proxy-plus":true,"received-transfers-redesign":true,"receiving-page":"sticky-app-bar","recipient-splash-page":false,"referral-program":false,"reject-consent-button-visibility":false,"remove-transfer-default-expiry":false,"rename-transfer":true,"return-2022-tiers-in-tiers-pricing-endpoint":true,"sendgrid-marketing-integration":true,"seo-transfer-window-wording-ab-test":false,"show-pricing-page-to-free-account-experiment":false,"show-pro-to-premium-upgrade":true,"show-unpaid-invoices":true,"sign-in-panel-redesign":false,"signup-verification":true,"smartling-integration":false,"splash-cta-text-experiment":false,"splash-page-copy-update":true,"splash-page-show-premium-card":false,"splash-page-ui-updates":true,"splash-show-all-tiers-experiment":false,"spot-illustrations":true,"sso-rollout":true,"suspected-bots-ads-routing":false,"tcf-powered-cookie-wall":true,"teams-survey-upsell":false,"teams-transfer":true,"teams-transfer-create-team-on-login":true,"teams-transfer-management-link":true,"teams-transfer-onboarding":true,"test-flag-for-frontend-integration":false,"tos-transfer-window":false,"transfer-mobile-web-receiving":true,"transfer-overview-inline-cues":true,"transfer-size-tooltip-experiment":true,"transfer-tooltip":true,"transfer-verification-new-ui":true,"updated-tier-panel":true,"upsell_survey":false,"use-refresh-tokens":true,"use-tiers-pricing-endpoint":true,"user-uploaded-assets-with-peek":true,"verify-paypal-webhooks":false,"wallpaper-micro-frontend":false,"wallpaper-reset-rotation":false,"wallpaper-reset-rotation-max-position":3,"wallpaper-rotation-intervals-per-country":{"mid":180000,"min":45000,"rangeMax":[26,600000],"rangeMid":[11,180000],"rangeMin":[1,45000],"max":600000},"we-transfer-outage-banner":"control","$flagsState":{"account-state-field":{"version":5,"reason":{"kind":"FALLTHROUGH"},"variation":0},"adblock-mitigation":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":1},"admiral-cookie-consent":{"version":2,"reason":{"kind":"OFF"},"variation":1},"alternative-copy-pricing-page-experiment":{"version":2,"reason":{"kind":"OFF"},"variation":1},"annual-pricing-experiment":{"version":12,"reason":{"kind":"FALLTHROUGH"},"variation":0,"trackEvents":true},"autocomplete-billing-details":{"version":2,"reason":{"kind":"OFF"},"variation":1},"batch-insert-files":{"version":4,"reason":{"kind":"OFF"},"variation":2},"baxter-tos":{"version":5,"reason":{"kind":"OFF"},"variation":1},"bundle-2021-creative":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":0},"bundle-2021-creative-splashpage":{"version":2,"reason":{"kind":"OFF"},"variation":1},"bundle-splashpage-experiment":{"version":19,"reason":{"kind":"FALLTHROUGH"},"variation":3,"trackEvents":true},"carbon-calculator":{"version":2,"reason":{"kind":"OFF"},"variation":1},"ccpa-banner":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":1},"ccpa-cookie-banner":{"version":5,"reason":{"kind":"FALLTHROUGH"},"variation":1},"cookie-banner":{"version":21,"reason":{"kind":"OFF"},"variation":1},"cookie-banner-copy":{"version":9,"reason":{"kind":"OFF"},"variation":3},"cookie-wall":{"version":13,"reason":{"kind":"OFF"},"variation":1},"cookie-wall-paid-media":{"version":9,"reason":{"kind":"OFF"},"variation":1},"cookie-wall-variations":{"version":9,"reason":{"kind":"FALLTHROUGH"},"variation":2},"create-team-for-every-account":{"version":5,"reason":{"kind":"FALLTHROUGH"},"variation":0},"cross-product-usage-survey-upsell":{"version":2,"reason":{"kind":"OFF"},"variation":1},"data-opt-in":{"version":4,"reason":{"kind":"FALLTHROUGH"},"variation":1},"direct-storm-upload":{"version":2,"reason":{"kind":"OFF"},"variation":1},"disable-splashpage":{"version":2,"reason":{"kind":"OFF"},"variation":1},"discovery-portals":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"dmca-takedown-claim-form":{"version":4,"reason":{"kind":"OFF"},"variation":1},"downgrade-intervention":{"version":11,"reason":{"kind":"FALLTHROUGH"},"variation":1,"trackEvents":true},"email-transfers":{"version":10,"reason":{"kind":"OFF"},"variation":0,"trackEvents":true},"ensemble":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":0},"expiry-date-refactor":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":0},"file-insert-batch-size":{"version":2,"reason":{"kind":"OFF"},"variation":0},"folder-upload-accessibility":{"version":5,"reason":{"kind":"FALLTHROUGH"},"variation":0},"force-account-verification":{"version":8,"reason":{"kind":"FALLTHROUGH"},"variation":0},"force-revenue-cat-user-id-on-mobile":{"version":2,"reason":{"kind":"OFF"},"variation":1},"free-account-affluent":{"version":13,"reason":{"kind":"OFF"},"variation":1,"trackEvents":true},"transfer-verification":{"version":27,"reason":{"kind":"FALLTHROUGH"},"variation":0},"free-account-launch":{"version":10,"reason":{"kind":"FALLTHROUGH"},"variation":0,"trackEvents":true},"free-account-onboarding":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"free-account-users-splash-experiment":{"version":2,"reason":{"kind":"OFF"},"variation":1},"free-accounts-pro-expiration-reminders":{"version":7,"reason":{"kind":"FALLTHROUGH"},"variation":0},"hide-cookie-wall":{"version":5,"reason":{"kind":"FALLTHROUGH"},"variation":1},"implement-spaces":{"version":75,"reason":{"kind":"FALLTHROUGH"},"variation":1},"increased-transfer-limit":{"version":25,"reason":{"kind":"FALLTHROUGH"},"variation":0,"trackEvents":true},"individual-user-email-verification":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":1},"intercom":{"version":4,"reason":{"kind":"FALLTHROUGH"},"variation":0},"iterable-marketing-integration":{"version":5,"reason":{"kind":"FALLTHROUGH"},"variation":0},"marketing-pixel-tracking":{"version":8,"reason":{"kind":"FALLTHROUGH"},"variation":0},"mobile-push-notifications":{"version":4,"reason":{"kind":"FALLTHROUGH"},"variation":0},"nav-sign-up-label-experiment":{"version":4,"reason":{"kind":"OFF"},"variation":0},"navigation-bar-redesign":{"version":10,"reason":{"kind":"OFF"},"variation":0},"new-transfer-expiry-options":{"version":17,"reason":{"kind":"FALLTHROUGH"},"variation":0},"no-cookiewall":{"version":8,"reason":{"kind":"OFF"},"variation":1},"old-splashpage":{"version":2,"reason":{"kind":"OFF"},"variation":1},"show-tiers-pricing-page":{"version":11,"reason":{"kind":"FALLTHROUGH"},"variation":0},"onboarding-alignment":{"version":4,"reason":{"kind":"FALLTHROUGH"},"variation":0},"one-tier-over-another-experiment":{"version":2,"reason":{"kind":"OFF"},"variation":1},"otp-verification":{"version":9,"reason":{"kind":"OFF"},"variation":0},"peek-rollout":{"version":76,"reason":{"kind":"FALLTHROUGH"},"variation":0},"portal-auth0-requests":{"version":13,"reason":{"kind":"FALLTHROUGH"},"variation":0},"portal-callout":{"version":2,"reason":{"kind":"OFF"},"variation":1},"portals-anchored-comments":{"version":2,"reason":{"kind":"OFF"},"variation":1},"portals-approval-action":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"portals-audio-player":{"version":2,"reason":{"kind":"OFF"},"variation":1},"portals-captions":{"version":4,"reason":{"kind":"FALLTHROUGH"},"variation":0},"portals-comments":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"portals-duedates":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"portals-localization":{"version":2,"reason":{"kind":"OFF"},"variation":1},"portals-preview-polling":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"portals-report-page":{"version":3,"reason":{"kind":"OFF"},"variation":1},"portals-video-player":{"version":3,"reason":{"kind":"OFF"},"variation":1},"portals-video-previews":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"premium-for-pro-users":{"version":7,"reason":{"kind":"FALLTHROUGH"},"variation":0},"pricing-cards-hierarchy-experiment":{"version":2,"reason":{"kind":"OFF"},"variation":1},"pricing-cards-hierarchy-multivariant":{"version":8,"reason":{"kind":"FALLTHROUGH"},"variation":0,"trackEvents":true},"pricing-panel-upsell-destination-experiment":{"version":2,"reason":{"kind":"OFF"},"variation":1},"pro-account-onboarding":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"pro-classic-beta-section-flag":{"version":2,"reason":{"kind":"OFF"},"variation":1},"pro-panel-classic-transfer":{"version":7,"reason":{"kind":"FALLTHROUGH"},"variation":0},"pro-pass-banner-upsells":{"version":7,"reason":{"kind":"OFF"},"variation":1},"pro-pass-upsells":{"version":6,"reason":{"kind":"OFF"},"variation":1},"profitwell-retain-dunning":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"programmatic-advertising":{"version":71,"reason":{"kind":"OFF"},"variation":1},"programmatic-advertising-bid-floor":{"version":14,"reason":{"kind":"FALLTHROUGH"},"variation":0},"programmatic-advertising-enable-kevel":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"programmatic-advertising-exchange-ix":{"version":7,"reason":{"kind":"FALLTHROUGH"},"variation":0},"programmatic-advertising-exchange-pubmatic":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":0},"programmatic-advertising-store-bid":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"programmatic-preview-staging":{"version":4,"reason":{"kind":"FALLTHROUGH"},"variation":1},"programmatic-send-tc-string":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"progress-panel-banner":{"version":2,"reason":{"kind":"OFF"},"variation":1},"progress-panel-tooltip":{"version":13,"reason":{"kind":"OFF"},"variation":1},"projects-promo-notice":{"version":3,"reason":{"kind":"OFF"},"variation":1},"promo-2021":{"version":2,"reason":{"kind":"OFF"},"variation":1},"proxy-adblock":{"version":11,"reason":{"kind":"FALLTHROUGH"},"variation":0},"proxy-cookiewall":{"version":9,"reason":{"kind":"FALLTHROUGH"},"variation":0},"proxy-plus":{"version":11,"reason":{"kind":"FALLTHROUGH"},"variation":0},"received-transfers-redesign":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":0},"receiving-page":{"version":6,"reason":{"kind":"OFF"},"variation":1,"trackEvents":true},"recipient-splash-page":{"version":4,"reason":{"kind":"OFF"},"variation":1},"referral-program":{"version":10,"reason":{"kind":"FALLTHROUGH"},"variation":1},"reject-consent-button-visibility":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":1},"remove-transfer-default-expiry":{"version":12,"reason":{"kind":"OFF"},"variation":1},"rename-transfer":{"version":5,"reason":{"kind":"FALLTHROUGH"},"variation":0},"return-2022-tiers-in-tiers-pricing-endpoint":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"sendgrid-marketing-integration":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"seo-transfer-window-wording-ab-test":{"version":16,"reason":{"kind":"OFF"},"variation":1},"show-pricing-page-to-free-account-experiment":{"version":2,"reason":{"kind":"OFF"},"variation":1},"show-pro-to-premium-upgrade":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"show-unpaid-invoices":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"sign-in-panel-redesign":{"version":6,"reason":{"kind":"OFF"},"variation":1,"trackEvents":true},"signup-verification":{"version":8,"reason":{"kind":"FALLTHROUGH"},"variation":0,"trackEvents":true},"smartling-integration":{"version":2,"reason":{"kind":"OFF"},"variation":1},"splash-cta-text-experiment":{"version":2,"reason":{"kind":"OFF"},"variation":1},"splash-page-copy-update":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"splash-page-show-premium-card":{"version":2,"reason":{"kind":"OFF"},"variation":1},"splash-page-ui-updates":{"version":9,"reason":{"kind":"FALLTHROUGH"},"variation":0,"trackEvents":true},"splash-show-all-tiers-experiment":{"version":2,"reason":{"kind":"OFF"},"variation":1},"spot-illustrations":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"sso-rollout":{"version":22,"reason":{"kind":"FALLTHROUGH"},"variation":0},"suspected-bots-ads-routing":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":1},"tcf-powered-cookie-wall":{"version":9,"reason":{"kind":"FALLTHROUGH"},"variation":0},"teams-survey-upsell":{"version":4,"reason":{"kind":"OFF"},"variation":1},"teams-transfer":{"version":38,"reason":{"kind":"FALLTHROUGH"},"variation":0},"teams-transfer-create-team-on-login":{"version":20,"reason":{"kind":"FALLTHROUGH"},"variation":0},"teams-transfer-management-link":{"version":13,"reason":{"kind":"FALLTHROUGH"},"variation":0},"teams-transfer-onboarding":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"test-flag-for-frontend-integration":{"version":2,"reason":{"kind":"OFF"},"variation":1},"tos-transfer-window":{"version":5,"reason":{"kind":"FALLTHROUGH"},"variation":1},"transfer-mobile-web-receiving":{"version":15,"reason":{"kind":"FALLTHROUGH"},"variation":0},"transfer-overview-inline-cues":{"version":4,"reason":{"kind":"FALLTHROUGH"},"variation":0},"transfer-size-tooltip-experiment":{"version":3,"reason":{"kind":"FALLTHROUGH"},"variation":0},"transfer-tooltip":{"version":8,"reason":{"kind":"OFF"},"variation":0},"transfer-verification-new-ui":{"version":7,"reason":{"kind":"FALLTHROUGH"},"variation":0},"updated-tier-panel":{"version":7,"reason":{"kind":"FALLTHROUGH"},"variation":0},"upsell_survey":{"version":5,"reason":{"kind":"OFF"},"variation":1},"use-refresh-tokens":{"version":12,"reason":{"kind":"FALLTHROUGH"},"variation":0},"use-tiers-pricing-endpoint":{"version":13,"reason":{"kind":"FALLTHROUGH"},"variation":0},"user-uploaded-assets-with-peek":{"version":18,"reason":{"kind":"FALLTHROUGH"},"variation":0},"verify-paypal-webhooks":{"version":3,"reason":{"kind":"OFF"},"variation":1},"wallpaper-micro-frontend":{"version":2,"reason":{"kind":"OFF"},"variation":1},"wallpaper-reset-rotation":{"version":7,"reason":{"kind":"FALLTHROUGH"},"variation":1},"wallpaper-reset-rotation-max-position":{"version":6,"reason":{"kind":"FALLTHROUGH"},"variation":0},"wallpaper-rotation-intervals-per-country":{"version":13,"reason":{"kind":"FALLTHROUGH"},"variation":1},"we-transfer-outage-banner":{"version":70,"reason":{"kind":"OFF"},"variation":2}},"$valid":true},
-    user: {"key":"10efef80-cf3d-4180-aa15-aed09ce1e8df","anonymous":true,"ip":"43.246.158.242","custom":{"plus-user-id":null,"is-mobile":false,"is-wetransfer-staff":false,"is-qa-source":false},"privateAttributeNames":["country","is-mobile","plus-user-id","is-wetransfer-staff","is-qa-source","ip"],"country":"IN"}
-  };
-</script>
 
-    <script type="text/javascript">
-    var __curated_wallpapers__ = [{"image_path":"curated/wallpaper/one-full.jpg","thumbnail_large":"curated/wallpaper/one_thumbnail_large.jpg","credits":"Bernardo Henning","curated":true},{"image_path":"curated/wallpaper/two-full.jpg","thumbnail_large":"curated/wallpaper/two_thumbnail_large.jpg","credits":"Bernardo Henning","curated":true},{"image_path":"curated/wallpaper/three-full.jpg","thumbnail_large":"curated/wallpaper/three_thumbnail_large.jpg","credits":"Ana Cuba","curated":true},{"image_path":"curated/wallpaper/four-full.jpg","thumbnail_large":"curated/wallpaper/four_thumbnail_large.jpg","credits":"Ana Cuba","curated":true},{"image_path":"curated/wallpaper/five-full.jpg","thumbnail_large":"curated/wallpaper/five_thumbnail_large.jpg","credits":"Hiroyuki Izutsu","curated":true},{"image_path":"curated/wallpaper/six-full.jpg","thumbnail_large":"curated/wallpaper/six_thumbnail_large.jpg","credits":"Hiroyuki Izutsu","curated":true}];
-  </script>
 
-  
- <script type="text/javascript" src="https://prod-cdn.wetransfer.net/assets/adtrack-4aee5180207621f94abeb04df0d9e7e52f4496bf16a55f712b2feb788c8f89f4.js"></script>
+Practical4:
+Exp4 Practical of Clustering.
+library(ggplot2)
+scatter <- ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))
+scatter + geom_point(aes(color=Species, shape=Species)) +   theme_bw()+   xlab("Sepal Length") +  ylab("Sepal Width") +   ggtitle("Sepal Length-Width")
+ggplot(data=iris, aes(Sepal.Length, fill = Species))+    theme_bw()+   geom_density(alpha=0.25)+   labs(x = "Sepal.Length", title="Species vs Sepal Length"))
+vol <- ggplot(data=iris, aes(x = Sepal.Length)) 
+vol + stat_density(aes(ymax = ..density..,  ymin = -..density..,fill = Species, color = Species),geom = "ribbon", position = "identity") +   facet_grid(. ~ Species) + coord_flip() + theme_bw()+labs(x = "Sepal Length", title="Species vs Sepal Length") 
+vol <- ggplot(data=iris, aes(x = Sepal.Width))
+vol + stat_density(aes(ymax = ..density..,  ymin = -..density..,fill = Species,color = Species),                     geom = "ribbon", position = "identity") +   facet_grid(. ~ Species) + coord_flip() + theme_bw()+labs(x = "Sepal Width", title="Species vs Sepal Width")
+irisData <- iris[,1:4]
+totalwSS<-c() 
+for (i in 1:15)
+ { 
+clusterIRIS <- kmeans(irisData, centers=i)
+totalwSS[i]<-clusterIRIS$tot.withinss
+}
+plot(x=1:15,y=totalwSS,type="b",xlab="Number of Clusters",
+ylab="Within groups sum-of-squares")
 
-<!-- polyfill `nomodule` in Safari 10.1: -->
-<script type=module>
-  !function(e,t,n){!("noModule"in(t=e.createElement("script")))&&"onbeforeload"in t&&(n=!1,e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove())}(document)
-</script>
+install.packages("NbClust")
+library(NbClust)
+ par(mar = c(2,2,2,2))
+ nb <- NbClust(irisData, method = "kmeans")
+hist(nb$Best.nc[1,], breaks = 15, main="Histogram for Number of Clusters")
+ library(cluster)
+cl <- kmeans(iris[,-5], 2)
+dis <- dist(iris[,-5])^2
+sil = silhouette (cl$cluster, dis)
+plot(sil, main = "Clustering Data with Silhoutte plot using 2 Clusters", col = c("cyan", "blue"))
+library(cluster)
+cl <- kmeans(iris[,-5], 8)
+ dis <- dist(iris[,-5])^2 
+sil = silhouette (cl$cluster, dis)
+plot(sil, main = "Clustering Data with Silhoutte plot using 8 Clusters", col = c("cyan", "blue", "orange", "yellow", "red", "gray", "green", "maroon"))
+install.packages("factoextra")
+library(factoextra)
+install.packages("clustertend")
+library(clustertend)
+genx<-function(x){
+runif(length(x), min(x), (max(x)))
+}
+random_df <- apply(iris[,-5], 2, genx)
+install.packages("factoextra")
+library(factoextra)
+install.packages("clustertend")
+library(clustertend)
+genx<-function(x){
+runif(length(x), min(x), (max(x)))
+}
+random_df <- apply(iris[,-5], 2, genx)graph = FALSE)
+res$hopkins_stat
 
-<script type="text/javascript">
-  // remove no-js class when this is executed
-  document.documentElement.className = document.documentElement.className.replace(/\s*no-js\s*/, " ");
-</script>
 
-<script type="text/javascript">
-  window.asset_host = "https://prod-cdn.wetransfer.net";
-</script>
 
-<script type="text/javascript">
-  var modernBrowser = (
-    'Promise' in window &&
-    'Symbol' in window &&
-    'URLSearchParams' in window &&
-    'entries' in Object && 
-    'requestAnimationFrame' in window && 
-    !!Array.prototype.find &&
-    !!NodeList.prototype.forEach
-  );
 
-  if (!modernBrowser) {
-    var polyfillScript = document.createElement('script');
-    polyfillScript.src = "https://prod-cdn.wetransfer.net/packs/js/polyfills.js";
-    document.body.appendChild(polyfillScript);
-  }
-  
-  [].map.call(document.querySelectorAll('#preload-assets'),function(l,s){
-    s=document.createElement('script');
-    s.src = 'noModule' in s ? l.href : l.getAttribute('fallback');
-    l.parentNode.appendChild(s);
-  })
-</script>
+Practical 5   Time Series:
 
-  <script type="text/javascript">
-  var __stripe__ = { publishable_key: 'pk_live_Mr2LqPswsFjzCjBTJCmOXB0S', api_version: '2020-03-02' };
-</script>
+Aim:  Time series forcasting
+data("AirPassengers")
+class(AirPassengers)
+start(AirPassengers)
+end(AirPassengers)
+frequency(AirPassengers)
+summary(AirPassengers)
+ plot(AirPassengers)
+abline(reg=lm(AirPassengers~time(AirPassengers)))
+cycle(AirPassengers)
+plot(aggregate(AirPassengers,FUN=mean))
+boxplot(AirPassengers~cycle(AirPassengers))
+acf(log(AirPassengers))
+acf(diff(log(AirPassengers)))
+(fit <- arima(log(AirPassengers), c(0, 1, 1),seasonal = list(order = c(0, 1, 1), period = 12)))
+pred <- predict(fit, n.ahead = 10*12)
+ts.plot(AirPassengers,2.718^pred$pred, log = "y", lty = c(1,3))
 
-  <script type="text/javascript">
-  var __sus_bot__ = true;
-</script>
 
-  <script type="text/javascript">
-  var __auth0_config__ = {
-    domain: "auth.wetransfer.com",
-    audience: "aud://transfer-api-prod.wetransfer/",
-    client_id: "dXWFQjiW1jxWCFG0hOVpqrk4h9vGeanc"
-  };
-</script>
 
-  <script type="text/javascript">
-  var accountAppUrl = 'https://myaccount.wetransfer.com';
-</script>
 
-  <script type="text/javascript">
-  var portalsUrl = 'https://portals.wetransfer.com';
-</script>
 
-  <script type="text/javascript">
-  var profitWellPublicAPIToken = '1a33eb12b20b92f6b89c398e023e2ca1';
-</script>
 
-  <script type="text/javascript">
-  var __wallpaper_bundle__ = {
-    microFrontendHost: "https://thanos.wetransfer.net/apps/wallpaper"
-  };
-</script>
 
-</body>
-</html>
+#Practical No. 6
+#Practical of Simple/Multiple Linear Regression
+
+Simple:
+lsfit(iris$Petal.Length, iris$Petal.Width)$coefficients
+
+plot(iris$Petal.Length, iris$Petal.Width, pch=21, bg=c("red","green3","blue")[unclass(iris$
+Species)], main="Iris Data", xlab="Petal length", ylab="Petal width")
+
+abline(lsfit(iris$Petal.Length, iris$Petal.Width)$coefficients, col="black")
+
+#create smple regression model
+lm(Petal.Width ~ Petal.Length, data=iris)$coefficients
+
+plot(iris$Petal.Length, iris$Petal.Width, pch=21, bg=c("red","green3","blue")[unclass(iris$
+Species)], main="Iris Data", xlab="Petal length", ylab="Petal width")
+
+abline(lm(Petal.Width ~ Petal.Length, data=iris)$coefficients, col="black")
+
+summary(lm(Petal.Width ~ Petal.Length, data=iris))
+
+plot(iris$Sepal.Width, iris$Sepal.Length, pch=21, bg=c("red","green3","blue")[unclass(iris
+$Species)], main="Iris Data", xlab="Sepal Width", ylab="Sepal Length")
+abline(lm(Sepal.Length ~ Sepal.Width, data=iris)$coefficients, col="black")
+summary(lm(Sepal.Length ~ Sepal.Width, data=iris))
+
+
+
+
+Multiple:
+#What happens if we divide the data up by species, and run three separate linear regressions?
+plot(iris$Sepal.Width, iris$Sepal.Length, pch=21, bg=c("red","green3","blue")[unclass(iris
+$Species)], main="Iris Data", xlab="Sepal length", ylab="Sepal length")
+abline(lm(Sepal.Length ~ Sepal.Width, data=iris)$coefficients, col="black")
+abline(lm(Sepal.Length ~ Sepal.Width, data=iris[which(iris$Species=="setosa"),])$coefficients, col="red")
+abline(lm(Sepal.Length ~ Sepal.Width, data=iris[which(iris$Species=="versicolor"),])$coefficients, col="green3")
+abline(lm(Sepal.Length ~ Sepal.Width, data=iris[which(iris$Species=="virginica"),])$coefficients, col="blue")
+
+#The coefficients doing separate per species regressions of Sepal.Length ~ Sepal.Width are:
+lm(Sepal.Length ~ Sepal.Width, data=iris[which(iris$Species=="setosa"),])$coefficients
+lm(Sepal.Length ~ Sepal.Width, data=iris[which(iris$Species=="versicolor"),])$coefficients
+lm(Sepal.Length ~ Sepal.Width, data=iris[which(iris$Species=="virginica"),])$coefficients
+lm(Sepal.Length ~ Sepal.Width:Species + Species - 1, data=iris)$coefficients
+#Using the summary command on the linear model object gives:
+summary(lm(Sepal.Length ~ Sepal.Width:Species + Species - 1, data=iris))
+
+#Simplify with AIC (Akaike Information Criterion)
+summary(step(lm(Sepal.Length ~ Sepal.Width * Species, data=iris)))
+
+#I just introduced a model of the form Sepal.Length ~ Sepal.Width:Species + Species - 1,
+#which gave identical coefficients to those found doing species specific regressions:
+lm(Sepal.Length ~ Sepal.Width:Species + Species - 1, data=iris)$coefficients
+lm(Sepal.Length ~ Sepal.Width:Species + Species, data=iris)$coefficients
+
+
+
+
+
+
+
+
+
+
+
+Practical 7  
+Aim: Practical of Logistics Regression.
+library(datasets)
+ir_data<- iris
+head(ir_data)
+str(ir_data)
+levels(ir_data$Species)
+sum(is.na(ir_data))
+ir_data<-ir_data[1:100,]
+set.seed(100)
+samp<-sample(1:100,80)
+ir_test<-ir_data[samp,]
+ir_ctrl<-ir_data[-samp,]
+install.packages("ggplot2")     
+library(ggplot2)
+install.packages("GGally")
+library(GGally)
+ggpairs(ir_test)
+y<-ir_test$Species; x<-ir_test$Sepal.Length
+glfit<-glm(y~x, family = 'binomial')
+ summary(glfit)
+newdata<- data.frame(x=ir_ctrl$Sepal.Length)
+predicted_val<-predict(glfit, newdata, type="response")
+prediction<-data.frame(ir_ctrl$Sepal.Length, ir_ctrl$Species,predicted_val)
+prediction
+qplot(prediction[,1], round(prediction[,3]), col=prediction[,2], xlab = 'Sepal Length', ylab = 'Prediction using Logistic Reg.')
+
+
+
+
+Practical 8
+Aim: practical of Hypothesis
+x= c(6.2, 6.6, 7.1, 7.4, 7.6, 7.9, 8, 8.3, 8.4, 8.5, 8.6, 8.8, 8.8, 9.1, 9.2, 9.4, 9.4, 9.7, 9.9, 10.2, 10.4, 10.8,11.3, 11.9)
+t.test(x-9,alternative="two.sided",conf.level=0.95)
+x=c(418,421,421,422,425,427,431,434,437,439,446,447,448,453,454,463,465)
+y=c(429,430,430,431,36,437,440,441,445,446,447)
+test2<-t.test(x,y,alternative="two.sided",mu=0,var.equal=F,conf.level=0.95)
+test2
+
+
+
+
+
+
+
+
+
+
+
+Practical 9
+Aim:  Practical of Analysis of Variance.
+y1 = c(18.2, 20.1, 17.6, 16.8, 18.8, 19.7, 19.1)
+y2 = c(17.4, 18.7, 19.1, 16.4, 15.9, 18.4, 17.7)
+y3 = c(15.2, 18.8, 17.7, 16.5, 15.9, 17.1, 16.7)
+y = c(y1, y2, y3)
+n = rep(7, 3)
+n
+group = rep(1:3, n)
+group
+tmp = tapply(y, group, stem)
+stem(y)
+tmpfn = function(x) c(sum = sum(x), mean = mean(x), var = var(x),n = length(x))
+tapply(y, group, tmpfn)
+tmpfn(y)
+data = data.frame(y = y, group = factor(group))
+fit = lm(y ~ group, data)
+anova(fit)
+df = anova(fit)[, "Df"]
+names(df) = c("trt", "err")
+df
+alpha = c(0.05, 0.01)
+qf(alpha, df["trt"], df["err"], lower.tail = FALSE)
+anova(fit)["Residuals", "Sum Sq"]
+anova(fit)["Residuals", "Sum Sq"]/qchisq(c(0.025, 0.975), 18,lower.tail = FALSE)
+
+
+
+
+
